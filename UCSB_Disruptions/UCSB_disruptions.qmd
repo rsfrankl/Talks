@@ -1,0 +1,87 @@
+---
+title: "Disruptions, Engagement, and ~~GIScience~~ Solutions"
+author: Rachel Franklin
+institute: Newcastle University + The Alan Turing Institute
+format: 
+  revealjs:
+    theme: serif
+    center: true
+    footer: "Spatial Data Science in an Age of Scientific Disruption | Franklin | December 8, 2023"
+    slide-number: true
+css: style.css
+editor: visual
+---
+
+## What we talk about when we talk about [*disruptions*]{style="background-color: #E9BDB4"} in spatial data science {.center}
+
+## ![](images/malnutrition.png){fig-align="center"}
+
+<!-- ## ![](climate_change.png){fig-align="center"} -->
+
+<!-- ## ![](poverty.png){fig-align="center"} -->
+
+## What we talk about when we talk about [*disruptions*]{style="background-color: #E9BDB4"} in spatial data science
+
+-   Obvious disruptions
+
+-   Other, less obvious, disruptions
+
+-   A secret third type of disruptions that keep Rachel up at night
+
+## Some obvious disruptions
+
+-   [Data]{style="background-color: #E9BDB4"}---new, big, at scale
+-   [Methods]{style="background-color: #E9BDB4"}---AI, GeoAI, Spatial Data Science, Urban Analytics, etc
+-   [Computational ease]{style="background-color: #E9BDB4"}---real time, multiscalar, at scale\
+    \
+    \
+
+###### my guess is we will discuss these exhaustively
+
+## Other less obvious disruptions
+
+-   [Openness]{style="background-color: #E9BDB4"}---for better...and maybe (?) sometimes for worse...
+-   [Closure]{style="background-color: #E9BDB4"}---of state borders, as well as data access and ownership
+-   [Inclusion]{style="background-color: #E9BDB4"}---the *who*, *what*, and *where* of research\
+    \
+    \
+
+###### what matters more: *what* we do or *how* we do it? (answer: both)
+
+## Disruptions that keep Rachel up at night
+
+-   [Data disappearance]{style="background-color: #E9BDB4"}---the old and the new
+-   [Conceptual + ontological drift]{style="background-color: #E9BDB4"}---whether we're measuring what we think we're measuring\*
+-   [Easy science]{style="background-color: #E9BDB4"}---separating the scientific wheat from the chaff\
+    \
+    \
+
+###### \*many of the basic precepts we organise our data and methods around are rapidly evolving: e.g., gender, household structure, place of work, employment, race/ethnicity
+
+# Other late-night worries
+
+## Distinguishing between [*disruptive science*]{style="background-color: #E9BDB4"} and [*science disruption*]{style="background-color: #E9BDB4"}
+
+## What can go wrong when we privilege [*disruptive*]{style="background-color: #E9BDB4"} science {.center}
+
+makers *versus* carers
+
+breakers *versus* maintainers
+
+## The mischaracterisation of political/social problems as [*research problems*]{style="background-color: #E9BDB4"}
+
+time, resources, and policy attention devoted to technical and research investment rather than investment in actual change
+
+## ~~GIScience~~ [*solutions*]{style="background-color: #E9BDB4"}
+
+-   Answer is more than *more* AI or *more* openness or *more* new names
+-   A piece of the answer *is* definitely data, however
+-   Knowing when to stay in our lane and when to swerve
+-   And policy
+-   And disciplinary solidarity\
+    \
+    \
+
+###### Aligning what's good for careers, what's good for science, and what's good for the world
+
+# The End

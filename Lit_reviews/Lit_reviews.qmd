@@ -1,0 +1,113 @@
+---
+title: "Literature Reviews: Together we can learn to ~~love~~ tolerate them"
+author: Rachel Franklin
+institute: Newcastle University + The Alan Turing Institute
+format: 
+  revealjs:
+    theme: default
+    center: true
+    footer: "Geospatial Systems CDT | Franklin | 10 May 2024"
+    slide-number: true
+css: style.css
+editor: visual
+---
+
+## First things first
+
+Why do we do literature reviews? Who are they for and what purpose do they serve?
+
+1.  We do them because they’re expected
+2.  We do them for ourselves
+3.  We do them for others in the field—they’re an integral component of a research road map
+4.  [*All of the above*]{style="background-color: #E9BDB4"}
+
+## ![](images/xkcd_papers.png){fig-align="center"}
+
+https://xkcd.com/2281/
+
+## Research Road Map: The Elements of a Paper
+
+-   **Introduction**
+    -   Where you convince yourself and others of the what, why, and how of your research
+    -   This is three parts motivation, justification, and promotion
+-   [**Literature Review/Background**]{style="background-color: #E9BDB4"}
+-   **Data and Methods**—These elements are like a recipe; can someone cook the same research meal from your description?
+-   **Analysis and Discussion**—Not only what you did (the analysis), but what you found!
+-   **Conclusions**—Brief synopsis of what you’ve done, but mostly main takeaways (main findings, contribution to the literature, policy relevance, caveats, future research)
+
+## There’s no one right way to do a literature review
+
+-   The more you read and the more you practice, the more you see there are lots of ways to successfully write a scientific work
+-   The internet is useful for all things academic!
+    -   Read and discard what doesn’t apply to you
+-   I find it most helpful to think of the literature review as a process, one that you undergo for your own understanding of a topic
+-   Once that’s settled in your mind, the writing and the structure will come more easily
+
+## What does it do?
+
+-   A literature review synthesizes and assesses *what* we know about a topic and *how* we know it
+-   And also sketches out a place for the research you are about to describe
+    -   This may not be an obvious “gap”!!
+-   Usually outlines the origin of the topic (e.g., seminal papers), reinforced with what others have done
+    -   May be variations on the general theme, replications in different places or with different variable or models, or exploring different functional mechanisms
+-   Don’t forget the *how*: data, methods, variables
+
+## Some questions we can ask ourselves
+
+-   What questions are asked on this topic?
+-   What do we know?
+- The mechanisms by which a phenomenon is hypothesized to operate and what previous research has shown
+- How are questions asked/answered?
+    - Methods
+    - Variables
+    - Data \
+
+Are there disputes or equivocal approaches? How will you fit into these debates?
+
+## The real question you may be asking yourself: Why do I have to do this?
+
+-   What we find in our research is dependent on how we framed the question in the first place
+    -   For ourselves, we want to lay out our assumptions, context, and expectations
+    -   For others, we want to help them understand where we’re coming from and why we do what we do (research question, but also methods and data!)
+-   Knowing what has been found in previous research will help you to place your findings into a larger context later in the paper/thesis
+    -   e.g., “similar to so-and-so, we also find that X has a strong positive effect on Y”
+-   To get ideas for model specifications, variables, possible challenges that may arise and how to avert them, interpretation of results, etc
+-   It is *not* about establishing that no one has done what you’re doing ever before in history
+    -   [In fact, life is much easier if you can link to some related research.]{style="background-color: #E9BDB4"}
+
+## ![](images/Homeownership.png){fig-align="center"}
+
+## ![](images/Kuznets.png){fig-align="center"}
+
+## How to get started (some ideas)
+
+-   You’re going to need to read
+-   A “snowball” approach can be easiest
+    -   Start with the one or two papers that you know are relevant and useful
+    -   The ones you know you would cite
+    -   Look at their references and read those (relevant) papers
+-   Google + Google Scholar
+    -   This is not a quick approach! It requires time and skimming lots of papers until you find the good stuff!
+-   Start to identify the main themes in your topic
+    -   [Don’t organize around paper; organize around topic or theme!]{style="background-color: #E9BDB4"}
+
+## Last words of advice
+
+-   Read lots of papers in your field
+    -   For content
+    -   But *also* to see the variety of ways of constructing a paper and a lit review
+-   When you take notes on a paper, keep track of what you valued it for
+    -   Foundational literature? For their methodological approach? For the niche/gap in the literature they identify?
+-   [When you find a really useful paper, have a look at their references!]{style="background-color: #E9BDB4"}
+-   Avoid drifting into annotated bibliography territory.
+    -   Your literature review should not read like a laundry list of citations.
+-   Have a structure in mind after you’re done reading and before you sit down to write
+-   It’s ok to cite selectively, but be aware of who you’re including/excluding!
+-   What if you can’t find any related research? You’ll need to be creative about establishing a broader context for your work
+-   Keep in mind who your community of scholars is: what literatures will they be expecting you to draw from?
+
+## ![](images/xkcd_ending_papers.png){fig-align="center"}
+
+https://xkcd.com/2268/
+
+# The End

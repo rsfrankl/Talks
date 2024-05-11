@@ -1,9 +1,5 @@
 ---
-title: "About"
+title: "Background"
 ---
 
-About this site
-
-```{r}
-1 + 1
-```
+This is *not* a catalog of every talk I've ever given, as you may have guessed. No, instead this is a modest compendium of recent presentations in which—for a variety of reasons—I had the time and space (and motivation) to create my slides in quarto rather than in my usual Microsoft ™️ Powerpoint.

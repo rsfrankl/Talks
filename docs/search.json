@@ -2,9 +2,9 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Background",
     "section": "",
-    "text": "1 + 1\n\n[1] 2"
+    "text": "This is not a catalog of every talk I’ve ever given, as you may have guessed. No, instead this is a modest compendium of recent presentations in which—for a variety of reasons—I had the time and space (and motivation) to create my slides in quarto rather than in my usual Microsoft ™️ Powerpoint."
   },
   {
     "objectID": "UCSB_disruptions.html#what-we-talk-about-when-we-talk-about-disruptions-in-spatial-data-science",
@@ -135,9 +135,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Miscellaneous Recent Talks",
+    "title": "Miscellanea",
     "section": "",
-    "text": "Spatial Data Science in an Age of Disruption, UC Santa Barbara, December 2023"
+    "text": "Introduction to Literature Reviews, Geospatial Systems Centre for Doctoral Training (CDT), MRES Students, May 2024"
   },
   {
     "objectID": "Lit_reviews/Lit_reviews.html#first-things-first",

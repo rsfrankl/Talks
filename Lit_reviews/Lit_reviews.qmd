@@ -9,7 +9,6 @@ format:
     center: true
     footer: "Geospatial Systems CDT | Franklin | 10 May 2024"
     slide-number: true
-css: style.css
 editor: visual
 ---
 

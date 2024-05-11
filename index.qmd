@@ -7,4 +7,3 @@ Introduction to Literature Reviews, Geospatial Systems Centre for Doctoral Train
 
 Spatial Data Science in an Age of Disruption, UC Santa Barbara, December 2023
 
-<iframe class="slide-deck" src="UCSB_Disruptions/UCSB_disruptions.html" height="420" width="750" style="border: 1px solid #2e3846;"></iframe>

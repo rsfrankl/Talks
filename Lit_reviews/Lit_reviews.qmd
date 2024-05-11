@@ -5,10 +5,11 @@ author: Rachel Franklin
 institute: Newcastle University + The Alan Turing Institute
 format: 
   revealjs:
-    theme: [default, mytheme.scss]
+    theme: simple
     center: true
     footer: "Geospatial Systems CDT | Franklin | 10 May 2024"
     slide-number: true
+css: style.css
 editor: visual
 ---
 
@@ -66,14 +67,18 @@ Are there disputes or equivocal approaches? How will you fit into these debates?
 
 ## Maybe you're thinking: Why do I have to do this?
 
+::: {.incremental}
+
 -   What we find in our research is dependent on how we framed the question in the first place
-    -   For ourselves, we want to lay out our assumptions, context, and expectations
-    -   For others, we want to help them understand where we’re coming from and why we do what we do (research question, but also methods and data!)
+    -   [For **ourselves**, we want to lay out our assumptions, context, and expectations]{style="font-size:0.8em"}
+    -   [For **others**, we want to help them understand where we’re coming from and why we do what we do (research question, but also methods and data!)]{style="font-size:0.8em"}
 -   Knowing what has been found in previous research will help you to place your findings into a larger context later in the paper/thesis
-    -   e.g., “similar to so-and-so, we also find that X has a strong positive effect on Y”
+    -   [e.g., “similar to so-and-so, we also find that X has a strong positive effect on Y”]{style="font-size:0.8em"}
 -   To get ideas for model specifications, variables, possible challenges that may arise and how to avert them, interpretation of results, etc
 -   It is *not* about establishing that no one has done what you’re doing ever before in history
-    -   [In fact, life is much easier if you can link to some related research.]{style="background-color: #E9BDB4"}
+  -   [In fact, life is much easier if you can link to some related research.]{style="background-color: #E9BDB4"}
+
+:::
 
 ## ![](images/Homeownership.png){fig-align="center"}
 

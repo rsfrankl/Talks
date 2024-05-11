@@ -2,7 +2,7 @@
 title: "Literature Reviews:"
 subtitle: "Together we can learn to ~~love~~ tolerate them"
 author: Rachel Franklin
-institute: Newcastle University + The Alan Turing Institute
+institute: Newcastle University
 format: 
   revealjs:
     theme: simple

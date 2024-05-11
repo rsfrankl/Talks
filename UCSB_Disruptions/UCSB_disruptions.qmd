@@ -16,10 +16,6 @@ editor: visual
 
 ## ![](images/malnutrition.png){fig-align="center"}
 
-<!-- ## ![](climate_change.png){fig-align="center"} -->
-
-<!-- ## ![](poverty.png){fig-align="center"} -->
-
 ## What we talk about when we talk about [*disruptions*]{style="background-color: #E9BDB4"} in spatial data science
 
 -   Obvious disruptions

@@ -1,5 +1,5 @@
 ---
-title: "A Few Recent Talks"
+title: "Miscellaneous Recent Talks"
 ---
 
 Introduction to Literature Reviews, Geospatial Systems Centre for Doctoral Training (CDT), MRES Students, May 2024

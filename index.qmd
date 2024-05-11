@@ -4,7 +4,6 @@ title: "Miscellaneous Recent Talks"
 
 Introduction to Literature Reviews, Geospatial Systems Centre for Doctoral Training (CDT), MRES Students, May 2024
 
-<iframe class="slide-deck" src="Lit_reviews/Lit_reviews.html" height="420" width="750" style="border: 1px solid #2e3846;"></iframe>
 
 Spatial Data Science in an Age of Disruption, UC Santa Barbara, December 2023
 

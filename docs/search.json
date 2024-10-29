@@ -145,5 +145,236 @@
     "title": "Disruptions, Engagement, and GIScience Solutions",
     "section": "GIScience solutions",
     "text": "GIScience solutions\n\nAnswer is more than more AI or more openness or more new names\nA piece of the answer is definitely data, however\nKnowing when to stay in our lane and when to swerve\nAnd policy\nAnd disciplinary solidarity\n\n\n\n\nAligning what’s good for careers, what’s good for science, and what’s good for the world"
+  },
+  {
+    "objectID": "Vienna/Vienna.html#section-2",
+    "href": "Vienna/Vienna.html#section-2",
+    "title": "21st Century Geographical Methods for Timeless Spatial Inequality Challenges",
+    "section": "",
+    "text": "Thinking about how emerging technologies intersect with the spatial demography of cities to exacerbate, reproduce, and generate inequalities across areas or groups."
+  },
+  {
+    "objectID": "Vienna/Vienna.html#especially-placement-of-sensors-in-the-urban-landscape",
+    "href": "Vienna/Vienna.html#especially-placement-of-sensors-in-the-urban-landscape",
+    "title": "21st Century Geographical Methods for Timeless Spatial Inequality Challenges",
+    "section": "Especially placement of sensors in the urban landscape",
+    "text": "Especially placement of sensors in the urban landscape\n\nSensor coverage and “sensor deserts”\nWho’s in the “gaps”\nEquitable decision-making"
+  },
+  {
+    "objectID": "Vienna/Vienna.html#why-should-we-care-about-sensors-and-sensor-networks",
+    "href": "Vienna/Vienna.html#why-should-we-care-about-sensors-and-sensor-networks",
+    "title": "21st Century Geographical Methods for Timeless Spatial Inequality Challenges",
+    "section": "Why should we care about sensors and sensor networks?",
+    "text": "Why should we care about sensors and sensor networks?"
+  },
+  {
+    "objectID": "Vienna/Vienna.html#theyre-everywhere",
+    "href": "Vienna/Vienna.html#theyre-everywhere",
+    "title": "21st Century Geographical Methods for Timeless Spatial Inequality Challenges",
+    "section": "1. They’re everywhere",
+    "text": "1. They’re everywhere"
+  },
+  {
+    "objectID": "Vienna/Vienna.html#increasingly-theyre-essential-urban-infrastructure",
+    "href": "Vienna/Vienna.html#increasingly-theyre-essential-urban-infrastructure",
+    "title": "21st Century Geographical Methods for Timeless Spatial Inequality Challenges",
+    "section": "2. Increasingly they’re essential urban infrastructure",
+    "text": "2. Increasingly they’re essential urban infrastructure\n\nPolicy decisions are made from sensor measurements\nSensors and sensor networks help cities run"
+  },
+  {
+    "objectID": "Vienna/Vienna.html#we-humans-are-funny-about-infrastructure-and-equity",
+    "href": "Vienna/Vienna.html#we-humans-are-funny-about-infrastructure-and-equity",
+    "title": "21st Century Geographical Methods for Timeless Spatial Inequality Challenges",
+    "section": "3. We humans are funny about infrastructure and equity",
+    "text": "3. We humans are funny about infrastructure and equity"
+  },
+  {
+    "objectID": "Vienna/Vienna.html#even-with-good-intentions-we-miss-people-and-places",
+    "href": "Vienna/Vienna.html#even-with-good-intentions-we-miss-people-and-places",
+    "title": "21st Century Geographical Methods for Timeless Spatial Inequality Challenges",
+    "section": "4. Even with good intentions we miss people and places",
+    "text": "4. Even with good intentions we miss people and places"
+  },
+  {
+    "objectID": "Vienna/Vienna.html#the-big-idea",
+    "href": "Vienna/Vienna.html#the-big-idea",
+    "title": "21st Century Geographical Methods for Timeless Spatial Inequality Challenges",
+    "section": "The big idea",
+    "text": "The big idea\nHow can we support informed and equitable decision-making around sensor placement, especially what criteria ideal networks might satisfy and the inevitable trade-offs involved?"
+  },
+  {
+    "objectID": "Vienna/Vienna.html#geographers-have-methods-for-this-yay-us",
+    "href": "Vienna/Vienna.html#geographers-have-methods-for-this-yay-us",
+    "title": "21st Century Geographical Methods for Timeless Spatial Inequality Challenges",
+    "section": "Geographers have methods for this! (yay us!)",
+    "text": "Geographers have methods for this! (yay us!)\n\nWhat is the ”best” allocation of n sensors, given a particular goal?\n\nSingle objective greedy algorithm: Place sensors one by one and maximize coverage of one sub-group only.\nMulti-objective genetic algorithm (NSGA2): Generate a spectrum of networks representing the coverage trade-offs between different sub-groups.\n\nDecision support tools that visualize options and trade-offs"
+  },
+  {
+    "objectID": "Vienna/Vienna.html#section-3",
+    "href": "Vienna/Vienna.html#section-3",
+    "title": "21st Century Geographical Methods for Timeless Spatial Inequality Challenges",
+    "section": "",
+    "text": "Coverage for older residents (&gt;65)"
+  },
+  {
+    "objectID": "Vienna/Vienna.html#section-4",
+    "href": "Vienna/Vienna.html#section-4",
+    "title": "21st Century Geographical Methods for Timeless Spatial Inequality Challenges",
+    "section": "",
+    "text": "Coverage for place-of-work population"
+  },
+  {
+    "objectID": "Vienna/Vienna.html#making-it-more-user-friendly",
+    "href": "Vienna/Vienna.html#making-it-more-user-friendly",
+    "title": "21st Century Geographical Methods for Timeless Spatial Inequality Challenges",
+    "section": "Making it more user-friendly",
+    "text": "Making it more user-friendly"
+  },
+  {
+    "objectID": "Vienna/Vienna.html#no-fancy-data-here-and-well-known-methods",
+    "href": "Vienna/Vienna.html#no-fancy-data-here-and-well-known-methods",
+    "title": "21st Century Geographical Methods for Timeless Spatial Inequality Challenges",
+    "section": "No fancy data here and well-known methods",
+    "text": "No fancy data here and well-known methods\n\n\nBut should make us think:\n\nhow are our data produced?\nhow can we do better?"
+  },
+  {
+    "objectID": "Vienna/Vienna.html#section-7",
+    "href": "Vienna/Vienna.html#section-7",
+    "title": "21st Century Geographical Methods for Timeless Spatial Inequality Challenges",
+    "section": "",
+    "text": "Thinking about the ways in which health, climate change, and transportation intersect"
+  },
+  {
+    "objectID": "Vienna/Vienna.html#case-in-point-the-london-tube",
+    "href": "Vienna/Vienna.html#case-in-point-the-london-tube",
+    "title": "21st Century Geographical Methods for Timeless Spatial Inequality Challenges",
+    "section": "Case in point: The London Tube",
+    "text": "Case in point: The London Tube\n\nThe first Tube line opened in 1863 and is still running as part of the Metropolitan line\n272 stations\n11 lines, covering 402 kilometres\nMore than five million passengers on the busiest days"
+  },
+  {
+    "objectID": "Vienna/Vienna.html#future-heat-on-the-london-tube",
+    "href": "Vienna/Vienna.html#future-heat-on-the-london-tube",
+    "title": "21st Century Geographical Methods for Timeless Spatial Inequality Challenges",
+    "section": "Future heat on the London Tube",
+    "text": "Future heat on the London Tube\n\nOnly 4 out of 11 London underground lines have air conditioning systems\nThe average summer temperature in London is expected to increase by 2.7 degrees Celsius by the 2050s\nThe probability of heatwaves could also increase five-fold and they’re expected to occur every other year\nBy 2070, the mean maximum air temperature in the UK in August is projected to increase by up to 6 °C in summer compared to 2018"
+  },
+  {
+    "objectID": "Vienna/Vienna.html#hot-is-already-here-average-station-temperatures-in-london-2019",
+    "href": "Vienna/Vienna.html#hot-is-already-here-average-station-temperatures-in-london-2019",
+    "title": "21st Century Geographical Methods for Timeless Spatial Inequality Challenges",
+    "section": "Hot is already here: Average station temperatures in London (2019)",
+    "text": "Hot is already here: Average station temperatures in London (2019)"
+  },
+  {
+    "objectID": "Vienna/Vienna.html#the-big-idea-1",
+    "href": "Vienna/Vienna.html#the-big-idea-1",
+    "title": "21st Century Geographical Methods for Timeless Spatial Inequality Challenges",
+    "section": "The big idea",
+    "text": "The big idea\nHow can we estimate current and future heat exposure on the Tube and who (where) is most affected?"
+  },
+  {
+    "objectID": "Vienna/Vienna.html#simple-and-important-question-with-complex-data-requirements",
+    "href": "Vienna/Vienna.html#simple-and-important-question-with-complex-data-requirements",
+    "title": "21st Century Geographical Methods for Timeless Spatial Inequality Challenges",
+    "section": "Simple (and important) question with complex data requirements",
+    "text": "Simple (and important) question with complex data requirements\n\nTravel flows (origins and destinations)\nWho’s travelling? (demographic and health characteristics)\nWhat’s the temperature on board? (estimated from known station-surface differentials)"
+  },
+  {
+    "objectID": "Vienna/Vienna.html#exciting-geographical-tools",
+    "href": "Vienna/Vienna.html#exciting-geographical-tools",
+    "title": "21st Century Geographical Methods for Timeless Spatial Inequality Challenges",
+    "section": "Exciting geographical tools",
+    "text": "Exciting geographical tools\n\nSynthetic Population Catalyst (SPC)–A synthetic population that simulates individual-level travel behaviour (homeplace and workplace), travel mode, person and socio-economic factors that allow us to explore heat vulnerability at the individual level\nTube operation timetable–For travel times and route estimation, we use the timetable provided by TfL APIs. Provides accurate estimation whether travellers for each OD-pair will take air-conditioned Tube lines.\nClim-recal–Estimates weather and heat wave days in the past and future on a daily basis in 2.2 km*2.2 km cells covering the entire UK. Local variation in the dataset is used to estimate heat exposure more accurately."
+  },
+  {
+    "objectID": "Vienna/Vienna.html#preliminary-results-a-sense-of-where-were-heading",
+    "href": "Vienna/Vienna.html#preliminary-results-a-sense-of-where-were-heading",
+    "title": "21st Century Geographical Methods for Timeless Spatial Inequality Challenges",
+    "section": "Preliminary results (a sense of where we’re heading)",
+    "text": "Preliminary results (a sense of where we’re heading)"
+  },
+  {
+    "objectID": "Vienna/Vienna.html#section-8",
+    "href": "Vienna/Vienna.html#section-8",
+    "title": "21st Century Geographical Methods for Timeless Spatial Inequality Challenges",
+    "section": "",
+    "text": "The inequality of heat exposure risk is significant in spatial terms\nTrickiness of estimation but lots of useful data that can be brought to bear\nBut also some of this should be being measured directly!"
+  },
+  {
+    "objectID": "Vienna/Vienna.html#section-10",
+    "href": "Vienna/Vienna.html#section-10",
+    "title": "21st Century Geographical Methods for Timeless Spatial Inequality Challenges",
+    "section": "",
+    "text": "Thinking about how many decades1 we’ve been talking about the potential for satellite imagery to be a social science data game-changer.\n\n\n\n\ntwo? three?"
+  },
+  {
+    "objectID": "Vienna/Vienna.html#whats-stopping-us",
+    "href": "Vienna/Vienna.html#whats-stopping-us",
+    "title": "21st Century Geographical Methods for Timeless Spatial Inequality Challenges",
+    "section": "What’s stopping us?",
+    "text": "What’s stopping us?\n\nLack of useful data products\nSkills and capacity\nData products in formats (and locations) social scientists and health folks are used to\nInterfaces that serve data that people want to use\nUntil pretty recently: high-resolution imagery, plus the tools to ingest, extract, and package at scale"
+  },
+  {
+    "objectID": "Vienna/Vienna.html#the-big-idea-2",
+    "href": "Vienna/Vienna.html#the-big-idea-2",
+    "title": "21st Century Geographical Methods for Timeless Spatial Inequality Challenges",
+    "section": "The big idea",
+    "text": "The big idea\nWe’ve now got the compute, methods, and sensor quality for satellite imagery to be a game-changer for social science and health research and policy making"
+  },
+  {
+    "objectID": "Vienna/Vienna.html#introducing-the-esrc-sdr-imagery-data-service",
+    "href": "Vienna/Vienna.html#introducing-the-esrc-sdr-imagery-data-service",
+    "title": "21st Century Geographical Methods for Timeless Spatial Inequality Challenges",
+    "section": "Introducing the ESRC SDR Imagery Data Service*",
+    "text": "Introducing the ESRC SDR Imagery Data Service*\n1. Imagery innovation–research-ready imagery-based data products, building off and developing innovative computing and AI methods that facilitate efficient automated workflows for measures and indicators, as well as custom-defined geographies and time periods.\n2. Data for all–data distribution channels that meet researchers and policymakers where they are, with user-friendly interfaces, familiar file formats, linkage and integration with existing data resources\n3. Capability and community–building capacity for understanding and working with imagery and imagery-derived data, growing the user-base and providing thought leadership, and heightening awareness and enthusiasm for the value of imagery\n\n\n\n\n\n*Code name: Imago"
+  },
+  {
+    "objectID": "Vienna/Vienna.html#complex-spatial-inequality-challenges-require-complex-approaches2",
+    "href": "Vienna/Vienna.html#complex-spatial-inequality-challenges-require-complex-approaches2",
+    "title": "21st Century Geographical Methods for Timeless Spatial Inequality Challenges",
+    "section": "Complex spatial inequality challenges require complex approaches1",
+    "text": "Complex spatial inequality challenges require complex approaches1\n\nInter-disciplinarity\nGeography\nA lot of social science under the hood 2\n\n\n\nnot necessarily complex methodsstarting with a question, building with theory, and then selecting the most appropriate methods"
+  },
+  {
+    "objectID": "Vienna/Vienna.html#the-question-chooses-the-method.",
+    "href": "Vienna/Vienna.html#the-question-chooses-the-method.",
+    "title": "21st Century Geographical Methods for Timeless Spatial Inequality Challenges",
+    "section": "The question chooses the method.",
+    "text": "The question chooses the method.\n(Not the other way around)"
+  },
+  {
+    "objectID": "Vienna/Vienna.html#last-takeaways",
+    "href": "Vienna/Vienna.html#last-takeaways",
+    "title": "21st Century Geographical Methods for Timeless Spatial Inequality Challenges",
+    "section": "Last takeaways",
+    "text": "Last takeaways\n(through the lens of yesterday’s conversation)\n\nWe really mustn’t forget to talk about data\nBasic principles of good estimators (i.e., methods): consistent, unbiased, efficient\nHow does GeoAI (however we are defining it) fit into the broader suite of existing geographical methods? Do we draw boundaries? Build walls? Moats?\nI’d love to see us all talking to each other more"
+  },
+  {
+    "objectID": "SCAG/SCAG_population.html#theyre-the-product-of-several-inter-related-processes",
+    "href": "SCAG/SCAG_population.html#theyre-the-product-of-several-inter-related-processes",
+    "title": "Don’t Panic!",
+    "section": "They’re the product of several inter-related processes",
+    "text": "They’re the product of several inter-related processes\n\nNatural change (births and deaths)\nInternal migration (in-migrants and out-migrants)\nInternational migration (immigration…but also emigration!)\nInterstellar migration"
+  },
+  {
+    "objectID": "SCAG/SCAG_population.html#demographic-changes-are-happening-everywhere",
+    "href": "SCAG/SCAG_population.html#demographic-changes-are-happening-everywhere",
+    "title": "Don’t Panic!",
+    "section": "Demographic changes are happening everywhere",
+    "text": "Demographic changes are happening everywhere\n\nLow fertility (below replacement level, actually)\nMigration slowdowns\nNet out-migration\nAgeing\n\n\n\n(and of course no place is a demographic island)"
+  },
+  {
+    "objectID": "SCAG/SCAG_population.html#remember-the-successes-that-got-us-where-we-are",
+    "href": "SCAG/SCAG_population.html#remember-the-successes-that-got-us-where-we-are",
+    "title": "Don’t Panic!",
+    "section": "Remember the successes that got us where we are",
+    "text": "Remember the successes that got us where we are\n\nIncreased (healthy) life expectancy\nContraception and choice\nFreedom of movement"
+  },
+  {
+    "objectID": "SCAG/SCAG_population.html#section-1",
+    "href": "SCAG/SCAG_population.html#section-1",
+    "title": "Don’t Panic!",
+    "section": "",
+    "text": "No one stuck in place (at neighborhood or regional scale)\nNo one forced to move, either\nEveryone able to achieve their desired family size\nCaution about internal migration as a magic bullet\nEmphasis on equality of opportunity"
   }
 ]

@@ -1,0 +1,130 @@
+---
+title: "Don't Panic!"
+author: Rachel Franklin (@rsfrankl)
+institute: Newcastle University
+format: 
+  revealjs:
+    theme: [default, style.scss]
+    center: true
+    footer: "2024 Southern California Demographic Workshop | Franklin | September 24, 2024"
+    embed-resources: true
+    slide-number: true
+editor: visual
+---
+
+# Anyone who believes that exponential growth can go on forever in a finite world is either a madman or an economist. {.center}
+
+::: {style="text-align: right"}
+--Kenneth Boulding
+:::
+
+# Let's talk about *population* growth
+
+## 
+
+```{r}
+library(readxl)         # for reading in Excel data
+library(dplyr)          # for data manipulation
+library(tidyr)          # for data shaping
+library(ggplot2)        # for generating the visualizations
+library(hrbrthemes) # for themes
+
+#uses county population by age data in SGAC folder
+ca_county_data <- read_excel("~/Documents/GitHub/SCAG/California_age_2022_2023.xlsx", sheet = "County_pop_change")
+
+# Plot population change 2022-2023
+new_data <- ca_county_data %>%
+  mutate(SCAG = as.factor(SCAG))
+ggplot(new_data) +
+  geom_segment( aes(x=County, xend=County, y=0, yend=pct_change_22_23), color="grey") +
+  geom_point( aes(x=County, y=pct_change_22_23, color=SCAG, size=total_2023)) +
+  coord_flip() +
+  scale_x_discrete(limits=rev) +
+  theme_dark() +
+  theme(
+    legend.position = "none",
+  ) +
+  theme(axis.line = element_line(color='darkgrey'),
+        plot.background = element_rect(fill = "#fcefeb", color = NA),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank())+
+  xlab("") +
+  ylab("California County Population Change (percent), 2022-2023 (ACS 1-year estimates)")
+```
+
+# Growth (and shrinkage) aren't just *one* thing
+
+## They're the product of several inter-related processes
+
+-   Natural change (births and deaths)
+
+-   Internal migration (in-migrants and out-migrants)
+
+-   International migration (immigration...but also emigration!)
+
+-   ~~Interstellar migration~~
+
+# And these processes matter for policy\*
+
+-   Understanding the role of age structure
+
+-   And drivers of loss and growth (like, is it mostly age structure?)
+
+-   And constraints on demographic fulfillment, whether migration or fertility
+
+\
+\
+\* local, regional, *and* national
+
+## Demographic changes are happening everywhere
+
+-   Low fertility (*below* replacement level, actually)
+
+-   Migration slowdowns
+
+-   Net out-migration
+
+-   Ageing
+
+\
+\
+(and of course no place is a demographic island)
+
+## Remember the successes that got us where we are
+
+-   Increased (healthy) life expectancy
+
+-   Contraception and choice
+
+-   Freedom of movement
+
+# And some additional rules to guide us
+
+## 
+
+1.  No one stuck in place (at neighborhood or regional scale)
+
+2.  No one *forced* to move, either
+
+3.  Everyone able to achieve their desired family size
+
+4.  Caution about internal migration as a magic bullet
+
+5.  Emphasis on equality of opportunity
+
+# So where does that leave us?
+
+-   Understanding non-demographic policies may have intended and unintended demographic consequences
+
+    -   [*All* local and regional policy is demographic?]{style="background-color: lemonchiffon"}
+
+-   Getting comfortable with a new demographic status quo
+
+-   Keeping in mind Southern California does not exist in a bubble
+
+-   Less focus on growth: creating quality not quantity
+
+-   More focus on well-being and quality of life
+
+# Thank you and remember: don't panic

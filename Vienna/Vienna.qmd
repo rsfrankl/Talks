@@ -1,0 +1,243 @@
+---
+title: "21st Century Geographical Methods for Timeless Spatial Inequality Challenges"
+author: Rachel Franklin (@rsfrankl)
+institute: Newcastle University | The Alan Turing Institute
+format: 
+  revealjs:
+    theme: [default, style.scss]
+    center: true
+    footer: "Sociotechnical Foundations of GeoAI and Spatial Data Science | Franklin | 27 October 2024"
+    embed-resources: true
+    slide-number: true
+editor: visual
+---
+
+#  {.center}
+
+::: r-fit-text
+A Tale Told in Three Chapters
+:::
+
+::: aside
+Can also be played as interactive spot-the-geographical method bingo except no bingo cards.
+:::
+
+# Acknowledgements
+
+![Art Getis, Waldo Tobler, and Bill Clark](images/Waldo.png){fig-align="center"}
+
+# Prologue {.center}
+
+What is *spatial inequality*?
+
+The **observation of uneven attributes or outcomes over space**, for sure. But also the *processes* and *structures* producing that unevenness, as well as the *impacts* of those inequalities.
+
+# Chapter 1 {.center}
+
+Spatial inequality and the smart city
+
+## ![](images/smart_cities_team.png){fig-align="center"}
+
+## 
+
+Thinking about how **emerging technologies** intersect with the **spatial demography of cities** to exacerbate, reproduce, and generate inequalities across areas or groups.
+
+## Especially placement of sensors in the urban landscape
+
+-   Sensor coverage and “sensor deserts”
+-   Who’s in the “gaps”
+-   Equitable decision-making
+
+## Why should we care about sensors and sensor networks?
+
+## 1. They're everywhere {.nostretch}
+
+![](images/Chicago_sensors.png){fig-align="center" width="80%"}
+
+## 2. Increasingly they're essential urban infrastructure
+
+-   Policy decisions are made from sensor measurements
+-   Sensors and sensor networks help cities run
+
+## 3. We humans are funny about infrastructure and equity
+
+![](images/NCL_sensor_lsoas.png){fig-align="center" width="80%"}
+
+## 4. Even with good intentions we miss people and places
+
+![](images/NCL_deprivation.png){fig-align="center" width="80%"}
+
+## The big idea
+
+How can we support informed and equitable decision-making around sensor placement, especially what criteria *ideal* networks might satisfy and the inevitable trade-offs involved?
+
+## Geographers have methods for this! (yay us!)
+
+-   What is the ”best” allocation of *n* sensors, given a particular goal?
+
+    -   **Single objective greedy algorithm**: Place sensors one by one and maximize coverage of one sub-group only.
+    -   **Multi-objective genetic algorithm (NSGA2)**: Generate a spectrum of networks representing the coverage trade-offs between different sub-groups.
+
+-   Decision support tools that visualize options and trade-offs
+
+## 
+
+![Coverage for older residents (\>65)](images/sensors_over65s.png)
+
+## 
+
+![Coverage for place-of-work population](images/sensors_work.png)
+
+## Making it more user-friendly
+
+## ![](images/decision_support3.png){fig-align="center"}
+
+## No fancy data here and well-known methods
+
+\
+\
+But should make us think:
+
+a)  how are our data produced?
+
+b)  how can we do better?
+
+# Chapter 2 {.center}
+
+Public transportation heat exposure in a warming world
+
+## ![](images/heat_exposure_team.png){fig-align="center"}
+
+## 
+
+Thinking about the ways in which **health**, **climate change**, and **transportation** intersect
+
+## Case in point: The London Tube
+
+-   The first Tube line opened in 1863 and is still running as part of the Metropolitan line
+-   272 stations
+-   11 lines, covering 402 kilometres
+-   More than five million passengers on the busiest days
+
+## Future heat on the London Tube
+
+-   Only 4 out of 11 London underground lines have air conditioning systems
+
+-   The average summer temperature in London is expected to increase by 2.7 degrees Celsius by the 2050s
+
+-   The probability of heatwaves could also increase five-fold and they're expected to occur every other year
+
+-   By 2070, the mean maximum air temperature in the UK in August is projected to increase by up to 6 °C in summer compared to 2018
+
+## Hot is already here: Average station temperatures in London (2019)
+
+![](images/London_temp.png){fig-align="center"}
+
+## The big idea
+
+How can we estimate current and future heat exposure on the Tube *and* who (where) is most affected?
+
+## Simple (and important) question with complex data requirements
+
+-   Travel flows (origins and destinations)
+
+-   Who's travelling? (demographic and health characteristics)
+
+-   What's the temperature on board? (estimated from known station-surface differentials)
+
+## Exciting geographical tools
+
+-   **Synthetic Population Catalyst** (SPC)--A synthetic population that simulates individual-level travel behaviour (homeplace and workplace), travel mode, person and socio-economic factors that allow us to explore heat vulnerability at the individual level
+
+-   **Tube operation timetable**--For travel times and route estimation, we use the timetable provided by TfL APIs. Provides accurate estimation whether travellers for each OD-pair will take air-conditioned Tube lines.
+
+-   **Clim-recal**--Estimates weather and heat wave days in the past *and* future on a daily basis in 2.2 km\*2.2 km cells covering the entire UK. Local variation in the dataset is used to estimate heat exposure more accurately.
+
+## Preliminary results (a sense of where we're heading) {.nostretch}
+
+![](images/heat_results.png){fig-align="center" width="80%"}
+
+## 
+
+-   The inequality of heat exposure risk is significant in spatial terms
+
+-   Trickiness of estimation but lots of useful **data** that can be brought to bear
+
+-   **But** also some of this should be being measured directly!
+
+# Chapter 3 {.center}
+
+Making satellite imagery data *usable*, *useful*, and *used* in the social sciences and health
+
+## ![](images/Imago_team.png){fig-align="center"}
+
+## 
+
+Thinking about how many decades[^1] we've been talking about the potential for **satellite imagery** to be a **social science data** game-changer.\
+\
+\
+\
+
+[^1]: two? three?
+
+## What's stopping us?
+
+-   Lack of useful data products
+
+-   Skills and capacity
+
+-   Data products in formats (and locations) social scientists and health folks are used to
+
+-   Interfaces that serve data that people want to use
+
+-   Until pretty recently: high-resolution imagery, plus the tools to ingest, extract, and package at scale
+
+## The big idea
+
+We've now got the compute, methods, and sensor quality for satellite imagery to be a game-changer for social science and health research and policy making
+
+## Introducing the ESRC SDR Imagery Data Service\*
+
+**1. Imagery innovation**--research-ready imagery-based data products, building off and developing innovative computing and AI methods that facilitate efficient automated workflows for measures and indicators, as well as custom-defined geographies and time periods.
+
+**2. Data for all**--data distribution channels that meet researchers and policymakers where they are, with user-friendly interfaces, familiar file formats, linkage and integration with existing data resources
+
+**3. Capability and community**--building capacity for understanding and working with imagery and imagery-derived data, growing the user-base and providing thought leadership, and heightening awareness and enthusiasm for the value of imagery\
+\
+\
+
+::: aside
+\*Code name: Imago
+:::
+
+# Epilogue
+
+## Complex spatial inequality challenges require complex approaches[^2]
+
+[^2]: not necessarily complex methods
+
+-   Inter-disciplinarity
+-   Geography
+-   A lot of social science under the hood [^3]\
+    \
+
+[^3]: starting with a question, building with theory, and then selecting the most appropriate methods
+
+## The question chooses the method.
+
+(Not the other way around)
+
+## Last takeaways
+
+(through the lens of yesterday's conversation)
+
+-   We really mustn't forget to talk about data
+-   Basic principles of good estimators (i.e., methods): consistent, unbiased, efficient
+-   How does GeoAI (however we are defining it) fit into the broader suite of existing geographical methods? Do we draw boundaries? Build walls? Moats?
+-   I'd love to see us all talking to each other more
+
+# The End.
+
+::: aside
+Thank you!!
+:::

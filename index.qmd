@@ -23,5 +23,3 @@ title: "Miscellanea"
 **Sociotechnical Foundations of GeoAI and Spatial Data Science, Vienna, October 2024**
 
 <iframe class="slide-deck" src="Vienna/Vienna.html" height="420" width="750" style="border: 1px solid #2e3846;">
-
-</iframe>

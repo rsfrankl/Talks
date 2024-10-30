@@ -18,7 +18,15 @@ editor: visual
 --Kenneth Boulding
 :::
 
-# Let's talk about *population* growth
+# Let's talk about *population* growth {.center}
+
+## 
+
+![](images/England_pop_change.png){fig-align="center" width=80%}
+
+## 
+
+![](images/Europe_pop_change.png){fig-align="center"}
 
 ## 
 
@@ -64,6 +72,10 @@ ggplot(new_data) +
 -   International migration (immigration...but also emigration!)
 
 -   ~~Interstellar migration~~
+
+## 
+
+![](images/England_source_change.png){fig-align="center" width=80%}
 
 # And these processes matter for policy\*
 

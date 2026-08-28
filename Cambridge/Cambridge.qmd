@@ -1,0 +1,274 @@
+---
+title: "Smart but Unequal?"
+subtitle: "Sensor Infrastructure in the Smart City"
+author: Rachel Franklin (@rsfrankl)
+date: 2025-02-25
+description: University of Cambridge City Seminars
+institute: Newcastle University | The Alan Turing Institute
+format: 
+  revealjs:
+    theme: [default, style.scss]
+    center: true
+    footer: "University of Cambridge City Seminars | 25 February 2025"
+    embed-resources: false
+    output-file: index
+    slide-number: true
+editor: source
+---
+
+# How do *emerging technologies* intersect with the *spatial demography of cities* to exacerbate, reproduce, and generate inequalities across areas or groups? {.center}
+
+# In particular {.center}
+
+- Sensor coverage and “sensor deserts”
+- Who’s in the “gaps”
+- Equitable decision-making
+
+# A talk in three parts:
+
+1.  Why care about sensors and sensor networks?
+
+2.  How to conceptualise and measure coverage?
+
+3.  How to support equitable decision-making around sensor placement?
+
+# Part 1: Why care about sensors?
+
+## 1. They're everywhere {.nostretch}
+
+![](images/Haymarket.png){fig-align="center" width="45%"}
+
+## 
+
+![](images/Tyne_bridge.png){fig-align="center"}
+
+## 
+
+![](images/Urban_observatory1.png){fig-align="center"}
+
+## 
+
+![](images/Urban_observatory2.png){fig-align="center"}
+
+## 
+
+![](images/Chicago_sensors.png){fig-align="center" width="80%"}
+
+## 2. Increasingly they're essential urban infrastructure
+
+## 
+
+![](images/Infrastructure.png){fig-align="center"}
+
+## 
+
+- Policy decisions are made from sensor measurements
+- Sensors and sensor networks help cities run
+
+## Perennial challenges of infrastructure
+
+- Cost
+- Maintenance
+- Engineering and planning
+- Service levels
+- **Equity**
+
+## 3. We humans are funny about infrastructure and equity
+
+![](images/NCL_sensor_points.png){fig-align="center" width="80%"}
+
+## 
+
+![](images/NCL_sensor_lsoas.png){fig-align="center" width="80%"}
+
+## New forms of infrastructure, same equity challenges
+
+- Digital and internet divides
+- Energy transitions and net zero
+- Smart city infrastructures (sensors, networks, data, etc.)
+
+## 
+
+“New technologies have a tendency to polarise and divide at many levels” *(Batty et al., 2012)*
+
+“smart cities are also internally differentiated … they are geographically uneven at a variety of scales. Whatever it means for a city to be ‘smart’, it is also readily apparent that **not all spaces of the city will be equally smart, meaning that smart cities will privilege some places, people and activities over others.**" *(Shelton et al. 2015)*
+
+“Geographies of codified knowledge have always been characterized by **stark core–periphery patterns**, with some parts of the world at the centre of global voice and representation and many others invisible or unheard.” *(Graham et al. 2014)*
+
+“urban futures anticipated by urban big data assemblages are highly uneven, data and algorithms cannot divest themselves of urban inequalities and the persistence of their geographies” *(Leszczynski, 2016)*
+
+## 4. Even with good intentions we miss people and places
+
+## 
+
+![](images/NCL_deprivation1.png){fig-align="center" width="80%"}
+
+## 
+
+![](images/NCL_deprivation2.png){fig-align="center" width="80%"}
+
+# Part 2: Conceptualising and measuring coverage
+
+## A quick note on sensors and surveillance
+
+::: aside
+What are we observing and measuring?
+:::
+
+## When is surveillance a good thing?
+
+![](images/surveillance.png){fig-align="center"}
+
+## 
+
+![](images/conceptualisation1.png){fig-align="center"}
+
+## 
+
+![](images/conceptualisation2.png){fig-align="center"}
+
+## How we conceptualise sensor "deserts"
+
+\
+
+Areas of the city:
+
+- not represented by sensors
+- for which knowledge is not produced
+- where modelling uncertainty is higher
+
+## Implementation: What is the ”best” allocation of *n* sensors, given a particular goal?
+
+Two optimization approaches:
+
+- **Single objective greedy algorithm**: Place sensors one by one and maximize coverage of one sub-group only.
+
+- **Multi-objective genetic algorithm (NSGA2)**: Generate a spectrum of networks representing the coverage trade-offs between different sub-groups.
+
+- Define the “coverage” of output area 𝑖 due to sensor configuration 𝑗
+
+- Place sensors to maximize the weighted sum of output area coverages across the city
+
+- Sensors located at output area centroids
+
+  - Essentially means every selected output area is covered by a sensor, as well as fractions of surrounding areas
+
+# Figuring out who's in the gaps
+
+## 
+
+![Coverage for older residents (\>65)](images/sensors_over65s.png)
+
+## 
+
+![Coverage for place-of-work population](images/sensors_work.png)
+
+## Tradeoffs
+
+::: {layout-ncol="2"}
+![Coverage for older residents (\>65)](images/sensors_over65s.png)
+
+![Coverage for place-of-work population](images/sensors_work.png)
+:::
+
+## 
+
+![](images/tradeoffs_figure.png){fig-align="center"}
+
+## 
+
+![](images/sorting.png){fig-align="center"}
+
+# Managing coverage tradeoffs
+
+## Making *good* decisions is hard
+
+![](images/decisionmaking1.png){fig-align="center" width="30%"}
+
+## Making *good* decisions is hard
+
+![](images/decisionmaking2.png){fig-align="center"}
+
+## Making *good* decisions is hard
+
+![](images/decisionmaking3.png){fig-align="center"}
+
+## Can we identify “compromise” networks that may not be best at coverage of any one sub-group, but are satisfactory across all? {.center}
+
+## Maximizing Coverage Across Groups
+
+![Multi-Objective Optimization](images/multiobjective1.png){fig-align="center"}
+
+## Maximizing Coverage Across Groups
+
+![Multi-Objective Optimization](images/multiobjective2.png){fig-align="center"}
+
+## How Does Our Approach Compare to an Actual Existing Network? {.center}
+
+## 
+
+![146 Urban Observatory sensors, located in 55 output areas](images/UOnetwork1.png){fig-align="center"}
+
+## 
+
+![](images/UOnetwork2.png){fig-align="center"}
+
+## 
+
+![](images/UOnetwork3.png){fig-align="center"}
+
+# Part 3: Supporting equitable decision-making
+
+## Developing tools to help create networks that *all* people and places can benefit *equally* from {.center}
+
+## Supporting Decision-Making (and planning!)
+
+![](images/decision_support1.png){fig-align="center"}
+
+## Supporting Decision-Making (and planning!)
+
+![](images/decision_support2.png){fig-align="center"}
+
+## Supporting Decision-Making (and planning!)
+
+![](images/decision_support3.png){fig-align="center"}
+
+# Wrapping up
+
+## 
+
+- **Important**: What is the purpose of a given sensor network and what might equitable coverage look like?
+  - One size may not fit all
+- Valuable role for optimization tools and decision support interfaces to help work through trade-offs and communicate outcomes.
+  - Transparency of decision-making
+- Need for clarity around sensor purpose, surveillance, and bias.
+- Potential for incorporating mobility and time-space trajectories into thinking about exposure and coverage.
+
+## Final (bigger picture) takeaways
+
+\
+
+No fancy data here and well-known methods. But should make us think:
+
+- how are our data produced?
+
+- how can we do better?
+
+## Final (bigger picture) takeaways
+
+- Multi-disciplinarity
+- Lengthy projects
+- The data-equity interface
+  - It’s not always about data—with, e.g., sensors, it’s partly about location decisions
+  - Easy for inequities to be hard-wired into infrastructures
+- Spatial inequality as an important (the important?) lens
+  - New infrastructures…same old challenges
+- Bridging the research-policy divide
+
+## ![](images/smart_cities_team.png){fig-align="center"}
+
+# The End.
+
+::: aside
+Thank you!!
+:::

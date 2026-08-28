@@ -1,0 +1,102 @@
+/*-- scss:defaults --*/
+
+// Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+// Colors
+$yellow: #E5DE74;
+$black: #1F1E1E;
+$blue: #b9e1e0;
+$gray: #e7e7e7;
+$pink: #9f3a5f;
+$green: #E3EABE;
+$cream: #FFFFF0;
+
+// Base document colors
+$navbar-bg: $pink; // navbar
+$sidebar-bg: $cream; //sidebar
+$sidebar-hl: $pink; // highlight color when hovering over sidebar links
+$sidebar-fg: $black; // sidebar foreground elements
+$navbar-fg: $cream; // navbar foreground elements
+$navbar-hl: $yellow; // highlight color when hovering over navbar links
+$body-bg: $cream; // page background 
+$body-color: $black; // page text 
+$footer-bg: $cream; // footer 
+$link-color: $pink; // hyperlinks 
+$border-color: $cream; //border between two columns on landing page
+
+/*-- scss:rules --*/
+
+.title {
+  font-size: 30px;
+  color: $black;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: $black;
+}
+
+.navbar {
+  height: 100px;
+  font-size: 20px;
+  box-shadow: 0 0 40px $pink;
+}
+
+.navbar-collapse {
+  background-color: $pink;
+}
+
+.about-image {
+  margin-top: 120px;
+  width: 15rem !important;
+  height: 15rem !important;
+}
+
+.about-link-text {
+  font-size: 2rem;
+  color: $pink;
+}
+
+.about-link {
+  border: none !important;
+}
+
+h1 {
+    font-size: 40px;
+    color: $black;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 30px;
+    color: $black;
+    border-bottom: none;
+    margin: 0;
+    padding: 10;
+}
+
+h3 {
+    font-size: 20px;
+    color: $black;
+    border-bottom: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------- element selectors ------- */
+
+/* style level one headers */
+h1 {
+  letter-spacing: 5px;
+  text-align: left;
+}
+
+@media (min-width: 991.98px) {
+    div.quarto-about-trestles .about-entity {
+        position: sticky;
+        top: 50px;
+        align-self: flex-start;
+    }
+}

@@ -2,14 +2,17 @@
 title: "21st Century Geographical Methods for Timeless Spatial Inequality Challenges"
 author: Rachel Franklin (@rsfrankl)
 institute: Newcastle University | The Alan Turing Institute
+date: 2024-10-27
+description: Sociotechnical Foundations of GeoAI and Spatial Data Science, Vienna
 format: 
   revealjs:
     theme: [default, style.scss]
     center: true
     footer: "Sociotechnical Foundations of GeoAI and Spatial Data Science | Franklin | 27 October 2024"
     embed-resources: true
+    output-file: index
     slide-number: true
-editor: visual
+editor: source
 ---
 
 #  {.center}

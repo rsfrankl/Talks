@@ -1,0 +1,311 @@
+---
+title: "Spatial Inequality and the Smart City"
+author: Rachel Franklin
+institute: Center for Geographic Analysis | Harvard University
+date: 2026-04-27
+description: Urban Data Working Group Online Seminar
+format: 
+  revealjs:
+    theme: [default, style.scss]
+    center: true
+    footer: "Urban Data Working Group | April 27, 2026"
+    embed-resources: true
+    output-file: index
+    slide-number: true
+editor: source
+---
+
+#
+
+How do [**emerging technologies**]{style="color: #800020"} intersect with the [**spatial demography of cities**]{style="color: #800020"} to exacerbate, reproduce, and generate inequalities across areas or groups?
+
+## Especially
+
+-   Sensor coverage and "sensor deserts"
+-   Who's in the "gaps"
+-   Equitable decision-making
+
+# A Talk in Three Parts:
+
+\
+
+1.  Why care about sensors and sensor networks?
+
+2.  How to conceptualise and measure coverage?
+
+3.  How to support equitable decision-making around sensor placement?
+
+## The ubiquity of sensors {.center}
+
+## 
+
+![Source: <https://arrayofthings.github.io/index.html>](images/array_of_things.png){fig-align="center"}
+
+## 
+
+![Source: <https://newcastle.urbanobservatory.ac.uk>](images/urban_observatory_map.png){fig-align="center"}
+
+## 
+
+![](images/urban_observatory_infographic.png){fig-align="center" width="85%"}
+
+# Sensors as infrastructure
+
+## 
+
+![](images/infrastructure_definition.png){fig-align="center" width="85%"}
+
+## The perennial challenges of infrastructure
+
+-   Cost
+
+-   Maintenance
+
+-   Engineering and planning
+
+-   Service levels
+
+-   **Equity**
+
+## New forms of infrastructure
+(same equity challenges)
+
+-   Digital and internet divides
+
+-   Energy transitions and net zero
+
+-   Smart city infrastructures (sensors, networks, data, etc.)
+
+## 
+
+> "New technologies have a tendency to polarise and divide at many levels."
+
+::: aside
+Batty et al., 2012
+:::
+
+## 
+
+> "smart cities are also internally differentiated ... they are geographically uneven at a variety of scales. Whatever it means for a city to be 'smart', it is also readily apparent that not all spaces of the city will be equally smart, meaning that [**smart cities will privilege some places, people and activities over others**]{style="color: #800020"}."
+
+::: aside
+Shelton et al. 2015
+:::
+
+## 
+
+> "Geographies of codified knowledge have always been characterized by stark core--periphery patterns, with some parts of the world at the centre of global voice and representation and [**many others invisible or unheard**]{style="color: #800020"}."
+
+::: aside
+Graham et al. 2014
+:::
+
+## 
+
+> "urban futures anticipated by urban big data assemblages are highly uneven, [**data and algorithms cannot divest themselves of urban inequalities**]{style="color: #800020"} and the persistence of their geographies"
+
+::: aside
+Leszczynski, 2016
+:::
+
+# Newcastle upon Tyne
+
+## 
+
+![](images/sensor_coverage_air_quality.png){fig-align="center"}
+
+## 
+
+![](images/sensor_coverage_lsoa.png){fig-align="center"}
+
+## 
+
+![](images/newcastle_deprivation.png){fig-align="center"}
+
+# Conceptualizing Coverage {.center}
+
+## Surveillance technologies
+What are we observing + measuring?
+
+![](images/venn.png){fig-align="center"}
+
+## 
+
+![](images/table1.png){fig-align="center"}
+
+## 
+
+![](images/table2.png){fig-align="center"}
+
+## Sensor deserts
+
+Areas of the city:
+
+-   not represented by sensors
+
+-   for which knowledge is not produced
+
+-   where modelling uncertainty is higher
+
+## How can we measure coverage?
+
+![](images/coverage_equation.png){fig-align="center" width="85%"}
+
+# Maximizing Coverage
+(one group at a time)
+
+## Trade-offs
+
+:::: {.columns} 
+::: {.column width="50%"}
+Over 65s
+
+![](images/tradeoffs_over65.png){fig-align="center"}
+
+:::
+
+::: {.column width="50%"}
+
+:::
+::::
+
+## Trade-offs
+
+:::: {.columns} 
+::: {.column width="50%"}
+Over 65s
+
+![](images/tradeoffs_over65.png){fig-align="center"}
+
+:::
+
+::: {.column width="50%"}
+
+Place-of-Work
+
+![](images/tradeoffs_over65_pow.png){fig-align="center"}
+
+:::
+::::
+
+## 
+
+![](images/coverage_curve.png){fig-align="center"}
+
+## 
+
+![](images/four_panel_coverage_maps.png){fig-align="center"}
+
+# Managing Coverage Trade-offs
+
+## Making Good Decisions is Hard
+
+- Where do we place sensors (source? exposure?)
+- Sensor quality v quantity
+- Sensors for people versus for models
+- Which groups to prioritize?
+
+## Can we identify "compromise" networks that may not be best at coverage of any one sub-group, but are satisfactory across all?
+
+# Maximizing Coverage Across Groups
+Multi-Objective Optimization
+
+![](images/multiobjective_1.png){fig-align="center"}
+
+## Maximizing Coverage Across Groups
+Multi-Objective Optimization
+
+![](images/multiobjective_2.png){fig-align="center"}
+
+# How Does Our Approach Compare to an Actual Existing Network?
+
+## 
+
+![146 Urban Observatory sensors, located in 55 output areas](images/uo_146_sensors.png){fig-align="center"}
+
+## 
+
+![](images/over_under_coverage.png){fig-align="center"}
+
+\
+
+Orange areas: under-served by existing Urban Observatory network
+
+Purple areas: excess coverage or "over-covered" by Urban Observatory network
+
+## 
+
+![](images/parallel_coordinates.png){fig-align="center"}
+
+# Supporting Decision-Making
+
+## Making Good Decisions is Hard
+
+\
+
+Developing tools to help create networks that *all* people and places can benefit *equally* from
+
+## Supporting Decision-Making (and planning!)
+
+![](images/decision_support_1.png){fig-align="center" width="85%"}
+
+## Supporting Decision-Making (and planning!)
+
+![](images/decision_support_2.png){fig-align="center" width="85%"}
+
+## Supporting Decision-Making (and planning!)
+
+![](images/decision_support_3.png){fig-align="center" width="85%"}
+
+## Supporting Decision-Making (and planning!)
+
+![](images/decision_support_4.png){fig-align="center" width="85%"}
+
+# Wrapping Up
+
+-   **Important:** What is the purpose of a given sensor network and what might equitable coverage look like?
+
+-   One size may not fit all
+
+-   Valuable role for optimization tools and decision support interfaces to help work through trade-offs and communicate outcomes.
+
+-   Transparency of decision-making
+
+-   Need for clarity around sensor purpose, surveillance, and bias.
+
+-   Potential for incorporating mobility and time-space trajectories into thinking about exposure and coverage.
+
+# Team effort
+
+-   **Kate Court**, Research Software Engineer, Newcastle University
+-   **Caitlin Robinson**, Lecturer, University of Bristol
+-   **Jack Roberts**, Research Data Scientist, Alan Turing Institute
+-   **Eman Zied**, Post-Doctoral Researcher, Newcastle University
+
+## Takeaways
+
+Some final thoughts on:
+
+-   Multi-disciplinarity
+
+-   Lengthy projects
+
+-   The data-equity interface
+
+-   It's not always about data---with, e.g., sensors, it's partly about location decisions
+
+-   Easy for inequities to be hard-wired into infrastructures
+
+-   Spatial inequality as an important (*the* important?) lens
+
+-   New infrastructures...same old challenges
+
+-   Bridging the research-policy divide
+
+## Thank you!
+
+\
+
+::: aside
+Research presented in this talk was supported by the Alan Turing Institute, project number R-NEW-001.
+:::

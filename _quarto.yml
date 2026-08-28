@@ -12,8 +12,8 @@ website:
 
 format:
   html:
-    theme: journal
-    css: styles.css
+    theme: [Default, Styles/website_styles.scss]
+    mainfont: Quicksand
     toc: true
     page-layout: full
     

@@ -13,6 +13,11 @@ $presentation-h2-font-size: 40px;
 
 /*-- scss:rules --*/
 
+.reveal .title-slide .date,
+.reveal .quarto-title-block .date {
+  display: none;
+}
+
 .title {
   font-size: 110px !important;
   text-align: left !important;

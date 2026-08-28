@@ -1,0 +1,118 @@
+---
+title: "Good Data Is Hard to Find"
+subtitle: "Why this matters and what to do about it"
+date: 2026-03-18
+description: Annual meeting of the AAG, San Francisco
+author: 
+  - name: "Rachel Franklin"
+    affiliation: "Center for Geographic Analysis <br> Harvard University"
+  - name: "Dani Arribas-Bel"
+    affiliation: "Geographic Data Science Lab <br> University of Liverpool"
+format: 
+  revealjs:
+    theme: [default, style.scss]
+    center: true
+    footer: "Franklin | AAG 2026 | March 18, 2026"
+    embed-resources: true
+    output-file: index
+    slide-number: true
+editor: source
+---
+
+# The second biggest urban problem
+
+Our contemporary urban data ecosystem isn't designed to address wicked urban challenges. (in fact, it's not designed at all)
+
+## This talk
+
+- Some definitions
+- A list of urban data grievances
+- ~~An illustrative vignette~~ (12 minutes!!)
+- Identifying the solution space
+- Takeaways
+
+## So many choices of "big urban problems"
+
+[Why focus on the data?]{style="color: #800020"}
+
+\
+\
+
+Old methods, new methods, big questions, little questions, causal, descriptive...
+
+\
+
+...it [*all*]{style="color: #800020"} depends on data
+
+## What do we mean by urban data?
+
+- Social media
+- Mobile phone
+- Streetview
+- Satellite imagery
+- Sensor
+- Micromoblity and public transit
+- Volunteered
+- Municipal civic
+- Traditional survey and census
+
+# The airing of urban data grievances
+
+## [1.]{style="color: #800020"} Accidental and incidental
+
+## [2.]{style="color: #800020"} Resolution-challenged (temporal *and* spatial)
+
+## [3.]{style="color: #800020"} Access and ownership
+
+## [4.]{style="color: #800020"} Policy poor (causal mechanisms, evaluation)
+
+## [5.]{style="color: #800020"} Inference fetishization
+
+## [6.]{style="color: #800020"} The "Demographic Constraint Problem"
+
+## [7.]{style="color: #800020"} Expensive opportunity cost
+
+# The solution space
+
+## A big-picture observation
+
+This situation isn't really anything new; we've hit other data-infrastructure impasses/inflection points
+
+- Creation of the American Community Survey (ACS)
+- Laidlaw and neighborhood-level data
+- Panel or longitudinal surveys (like PSID)
+
+## Two kinds of solutions
+
+## 1. Data ecosystem
+
+  - Pause. Deep breath. What data do we need?
+
+  - Data observatories
+  
+  - A new survey advent
+  
+  - They go big (data); we go small (data)
+  
+  - Just because we can, doesn't mean we should
+
+## 2. Research ecosystem
+
+  - Fund the data
+
+  - Slow our (research) roll
+
+  - Hold ourselves to a higher theory and policy standard
+  
+  - Articulate our data expectations
+  
+# Takeaways
+
+- Data infrastructure is its own exciting urban challenge.
+- We should be designing our data to meet our needs--not designing research questions around available or new data.
+- We have some agency.
+- F**k data inference (can I say that?)
+
+# The End.
+
+Thank you!!

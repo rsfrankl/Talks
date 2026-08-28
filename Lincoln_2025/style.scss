@@ -1,0 +1,55 @@
+/*-- scss:defaults --*/
+
+$theme-pink: #fcefeb;
+$theme-green: #395955;
+$theme-blue: #42affa;
+
+$body-bg: $theme-pink;
+$body-color: $theme-green !default;
+$link-color: $theme-blue;
+$presentation-title-slide-text-align: left;
+
+// fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+$font-family-sans-serif: "Quicksand", sans-serif;
+$presentation-heading-font: "Courier Prime", monospace;
+
+/*-- scss:rules --*/
+
+.reveal .title-slide .date,
+.reveal .quarto-title-block .date {
+  display: none;
+}
+
+.title {
+  font-size: 100px !important;
+  text-align: left !important;
+  color: $theme-green !important;
+  line-height: 100px !important;
+}
+
+.reveal .footer {
+  font-size: 13px !important;
+  color: $theme-green;
+}
+
+.reveal .slide-number {
+  font-size: 10px !important;
+  font: $font-family-sans-serif !important;
+  color: $theme-green;
+}
+
+.caption{
+   text-align: center;
+   font-size: 20px !important;
+}
+
+.reveal .slide aside {
+  font-size: 10px;
+  text-align: right;
+  color: $theme-green !important;
+  line-height: 25px !important;
+}

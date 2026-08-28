@@ -1,0 +1,233 @@
+---
+title: "GIS in Social Science Research"
+author: Rachel Franklin
+institute: Center for Geographic Analysis
+date: 2026-03-11
+description: Lecture for SOCIOL1128, Harvard University
+format: 
+  revealjs:
+    theme: [serif, style.scss]
+    center: true
+    footer: "Center for Geographic Analysis | Franklin | March 11, 2026"
+    embed-resources: true
+    output-file: index
+    slide-number: true
+editor: source
+---
+
+# Hello! 
+
+# ![](images/US_county_pop_change.png){fig-align="center"}
+
+# Lecture plan 
+
+(a sort of double-decker example sandwich)
+
+- ~~Example~~
+- Question of the day
+- Defining "GIS"
+- Examples
+- Spatial thinking
+- GIS and spatial analysis
+- Examples
+
+# Question of the day
+\
+How would you characterize the "ideal" place to live?
+
+\
+
+![source: https://xkcd.com/1472/](images/xkcd_map){fig-align="center"}
+
+# Question of the day
+
+\
+
+How would you characterize the "ideal" place to live?
+
+\
+\
+
+Bonus: How would you measure it?
+
+# What are we talking about when we talk about "GIS"
+
+1. "Geographic Information Systems" -- software or packages that work with spatial data to visualize and analyze spatial data (e.g., ArcGIS Pro, QGIS, R, or Python)
+
+2. Entire quantitative approaches to spatial questions and data -- spatial analysis
+
+3. A combination of spatial thinking, analysis, and data -- for example, accessibility research
+
+## What someone might mean when they say, "you should use GIS for this"
+
+- Spatial analysis
+- Visualization
+- Geographic data science
+- AI/machine learning
+
+## OK, so what can we do with GIS?
+
+-   **Visualize data ** -- for example, exploratory mapping or cartography of Airbnb rentals within a city
+-   **Explore geographic coincidence** -- for example, air quality and transportation routes
+-   **Calculate geometries** -- for example, length of road in an area or the size of a polygon
+-   **Identify spatial patterns** -- for example, clusters or hot spots
+-   **Find spatial relationships** -- for example, measuring exposure, accessibility, or market areas
+-   **Calculate spatial variables** -- for example, distance, density, or nearest neighbors
+-   **Estimate values or density** -- for example, interpolation
+
+# Examples
+
+## The first spatial analysis: John Snow’s 1854 Cholera Map
+
+![](images/snow_map){fig-align="center"}
+
+## Mappiness
+
+![](images/mappiness1){fig-align="center"}
+
+##
+
+![](images/mappiness2){fig-align="center"}
+
+##
+
+![](images/mappiness3){fig-align="center"}
+
+# Thinking spatially
+
+## Common kinds of spatial questions
+
+##
+
+![](images/airbnb_screenshot){fig-align="center"}
+
+##
+
+![](images/airbnb_data){fig-align="center"}
+
+## How does a variable or phenomenon vary over space? 
+
+![](images/airbnb_dist){fig-align="center"}
+
+## How is distance to public transportation related to Airbnb price? 
+
+![](images/airbnb_T){fig-align="center"}
+
+## Do we observe clustering of Airbnbs? 
+
+![](images/airbnb_heatmap){fig-align="center"}
+
+##
+
+![](images/airbnb_hex){fig-align="center"}
+
+## 
+
+How are local rents and density of Airbnbs related? 
+
+# There are so many ways to think about space
+
+## 
+
+![Source: Clark, 2011](images/clark_2011){fig-align="center"}
+
+# And so many ways to analyze spatial relationships and entities
+
+## Often we use spatial analysis tools to *extract* information
+
+-   Length of paved road in a region
+-   Number of universities in a place
+-   Number of inhabitants within a distance of a service
+-   Area within a distance of a road or feature (like a bus stop or metro station)
+
+# Some common spatial analysis tools
+
+## Buffers
+
+\
+
+![](images/buffers.png){width="70%" fig-align="center"}
+
+## Appealing way to visualise and calculate areas surrounding features
+
+![](images/points.png){width="70%" fig-align="center"}
+
+## Appealing way to visualise and calculate areas surrounding features
+
+![](images/buffers_from_points.png){width="70%" fig-align="center"}
+
+## Why would we want buffers? What purpose do they serve?
+
+## Calculating how many features fall into an area
+
+![](images/points_and_buffers.png){width="70%" fig-align="center"}
+
+## What if we want to know areas where two (or more) layers overlap?
+
+![](images/layers_intersect.png){width="70%" fig-align="center"}
+
+## What if we want to know areas where two (or more) layers overlap?
+
+![](images/intersection.png){width="70%" fig-align="center"}
+
+## What if we want to know how many people fall into an area?
+
+![](images/buffer_plus_intersection.png){width="70%" fig-align="center"}
+
+## How is this useful?
+
+### What if you want to identify Airbnbs close to public transportation and water?
+
+::: {layout-ncol="2"}
+![](images/airbnb_water1.png)
+
+![](images/airbnb_water2.png)
+:::
+
+# A last example
+
+## How real estate advertising and neighborhood racial change are related
+\
+\
+
+What do we need to study this?
+\
+\
+\
+
+::: aside
+Delmelle, E. C., & Nilsson, I. (2026). The Evolution of Real Estate Advertisement Language in Racially Changing Neighborhoods. *Annals of the American Association of Geographers*, 116(3), 621–641. https://doi.org/10.1080/24694452.2025.2582615
+:::
+
+## 
+
+![Location of white influx tracts in each county (highlighted in pink)](images/white_influx1.png)
+
+##
+
+![Coefficients of words associated with white influx neighborhoods since 2008](images/white_influx2.png)
+
+## 
+
+![Top ten most discriminating terms (highest absolute coefficients) for each time period across all cities for white influx neighborhoods](images/white_influx3.png)
+
+# Spatial Data Sources
+
+- Census data (e.g., tracts or counties)
+- State and city "GIS clearinghouses"
+- Any data with latitude and longitude or address
+- So much more...
+
+# Tools and resources
+
+- ArcGIS Pro and QGIS
+- R and Python
+\
+\
+
+- CGA training and workshops
+- Harvard GIS and spatial analysis courses
+- the internet!
+
+# Thanks!
+

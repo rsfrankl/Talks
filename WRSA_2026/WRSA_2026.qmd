@@ -1,0 +1,97 @@
+---
+title: Regional Science for Babies
+subtitle: Reflections on Alessandra's Talk
+author: Rachel Franklin
+institute: "Center for Geographic Analysis | Harvard University"
+date: 2026-02-13
+description: Discussant comments for Alessandra Faggian's presidential address, 2026 Western Regional Science Association Conference, Santa Fe
+format: 
+  revealjs:
+    theme: [default, style.scss]
+    center: true
+    footer: "Western Regional Science Association | Santa Fe, NM | 13 February 2026"
+    embed-resources: true
+    output-file: index
+    slide-number: false
+editor: source
+---
+
+# The persuasive case for caring about (regional) fertility
+
+## 1. 
+
+Today's kids are tomorrow's workers, innovators, and caregivers
+
+## 2.
+
+Today's kids are tomorrow's inter-regional migrants
+
+\
+
+\
+
+::: aside
+And international migrants! And international students!
+:::
+
+## 3. 
+
+Places are inter-dependent
+
+::: aside
+What happens over there matters over here. This is regional science bread and butter! 
+:::
+
+## 4. 
+
+Policies are inter-dependent too
+
+::: aside
+Thinking about local policy as [fertility neutral]{style="background-color: #F0E68C"}
+:::
+
+## 5. 
+
+Perhaps most importantly: fertility as an indicator of regional wellbeing (up to a point)
+
+## 6. 
+
+Geography matters for studying fertility
+
+::: aside
+Core versus periphery, but also across spatial and temporal scales
+
+Or spatial variations in fertility **decline** versus **delay**
+:::
+
+# Challenges of low fertility also matter closer to home
+
+#
+
+![](images/natural_change_2020_2024.png){fig-align="center" width="70%"}
+
+#
+
+![](images/domestic_migration_2020_2024.png){fig-align="center" width="70%"}
+
+#
+
+![](images/international_migration_2020_2024.png){fig-align="center" width="70%"}
+
+# Some last thoughts on Alessandra's talk
+
+- The risks attendant to demographic policy for demographic policy's sake (pro-natalism is kind of weird)
+
+- The added dimension of demographic compositional change
+
+- Role for regional science: regional development policy as demographic policy
+
+::: aside
+The last one is a key point Alessandra is making.
+:::
+
+# The End.
+
+::: aside
+Thank you!! And thank you, Alessandra!!
+:::

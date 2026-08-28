@@ -2,14 +2,17 @@
 title: "Don't Panic!"
 author: Rachel Franklin (@rsfrankl)
 institute: Newcastle University
+date: 2024-09-24
+description: 2024 Southern California Demographic Workshop, Southern California Association of Governments (SCAG)
 format: 
   revealjs:
     theme: [default, style.scss]
     center: true
     footer: "2024 Southern California Demographic Workshop | Franklin | September 24, 2024"
     embed-resources: true
+    output-file: index
     slide-number: true
-editor: visual
+editor: source
 ---
 
 # Anyone who believes that exponential growth can go on forever in a finite world is either a madman or an economist. {.center}
@@ -22,7 +25,7 @@ editor: visual
 
 ## 
 
-![](images/England_pop_change.png){fig-align="center" width=80%}
+![](images/England_pop_change.png){fig-align="center" width="80%"}
 
 ## 
 
@@ -35,7 +38,7 @@ library(readxl)         # for reading in Excel data
 library(dplyr)          # for data manipulation
 library(tidyr)          # for data shaping
 library(ggplot2)        # for generating the visualizations
-library(hrbrthemes) # for themes
+# library(hrbrthemes) # for themes
 
 #uses county population by age data in SGAC folder
 ca_county_data <- read_excel("~/Documents/GitHub/SCAG/California_age_2022_2023.xlsx", sheet = "County_pop_change")
@@ -65,25 +68,25 @@ ggplot(new_data) +
 
 ## They're the product of several inter-related processes
 
--   Natural change (births and deaths)
+- Natural change (births and deaths)
 
--   Internal migration (in-migrants and out-migrants)
+- Internal migration (in-migrants and out-migrants)
 
--   International migration (immigration...but also emigration!)
+- International migration (immigration...but also emigration!)
 
--   ~~Interstellar migration~~
+- ~~Interstellar migration~~
 
 ## 
 
-![](images/England_source_change.png){fig-align="center" width=80%}
+![](images/England_source_change.png){fig-align="center" width="80%"}
 
 # And these processes matter for policy\*
 
--   Understanding the role of age structure
+- Understanding the role of age structure
 
--   And drivers of loss and growth (like, is it mostly age structure?)
+- And drivers of loss and growth (like, is it mostly age structure?)
 
--   And constraints on demographic fulfillment, whether migration or fertility
+- And constraints on demographic fulfillment, whether migration or fertility
 
 \
 \
@@ -91,13 +94,13 @@ ggplot(new_data) +
 
 ## Demographic changes are happening everywhere
 
--   Low fertility (*below* replacement level, actually)
+- Low fertility (*below* replacement level, actually)
 
--   Migration slowdowns
+- Migration slowdowns
 
--   Net out-migration
+- Net out-migration
 
--   Ageing
+- Ageing
 
 \
 \
@@ -105,11 +108,11 @@ ggplot(new_data) +
 
 ## Remember the successes that got us where we are
 
--   Increased (healthy) life expectancy
+- Increased (healthy) life expectancy
 
--   Contraception and choice
+- Contraception and choice
 
--   Freedom of movement
+- Freedom of movement
 
 # And some additional rules to guide us
 
@@ -127,16 +130,16 @@ ggplot(new_data) +
 
 # So where does that leave us?
 
--   Understanding non-demographic policies may have intended and unintended demographic consequences
+- Understanding non-demographic policies may have intended and unintended demographic consequences
 
-    -   [*All* local and regional policy is demographic?]{style="background-color: lemonchiffon"}
+  - [*All* local and regional policy is demographic?]{style="background-color: lemonchiffon"}
 
--   Getting comfortable with a new demographic status quo
+- Getting comfortable with a new demographic status quo
 
--   Keeping in mind Southern California does not exist in a bubble
+- Keeping in mind Southern California does not exist in a bubble
 
--   Less focus on growth: creating quality not quantity
+- Less focus on growth: creating quality not quantity
 
--   More focus on well-being and quality of life
+- More focus on well-being and quality of life
 
 # Thank you and remember: don't panic

@@ -1,0 +1,34 @@
+---
+title: "Data, Data, Data"
+author: Rachel Franklin (@rsfrankl)
+institute: Center for Geographic Analysis (CGA), Harvard University
+date: 2025-05-23
+description: Lincoln Institute of Land Policy, 2025 Land Policy Conference
+format: 
+  revealjs:
+    theme: style.scss
+    center: true
+    footer: "Lincoln Institute of Land Policy | Land Policy Conference | Franklin | May 23, 2025"
+    embed-resources: true
+    output-file: index
+    slide-number: true
+editor: source
+---
+
+# [1]{style="background-color: #E9BDB4"} Data In, <br> Data Out
+
+# 
+
+![Air quality sensors in Newcastle upon Tyne <br> (https://doi.org/10.1080/24694452.2022.2077169)](images/RobinsonFigure9.png){fig-align="center" width="60%"}
+
+# [2]{style="background-color: #E9BDB4"} Data as Infrastructure
+
+# 
+
+![Cuebiq "location-based data" example <br> (https://cuebiq.com/map-challenge-cuebiq-workbench/)](images/cuebiq.png){fig-align="center" width="60%"}
+
+# [3]{style="background-color: #E9BDB4"} Data Chicken, Governance Egg?
+
+# 
+
+![Capturing rooftop characteristics <br> (https://ual.sg/project/roofpedia/)](images/roofpedia.png){fig-align="center" width="60%"}

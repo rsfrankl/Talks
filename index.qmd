@@ -1,25 +1,13 @@
 ---
-title: "Miscellanea"
+title: "Selected Talks and Presentations"
+listing:
+  contents: "*/*.qmd"
+  type: default
+  sort: "date desc"
+  fields: [title, date, description]
+  sort-ui: false
+  filter-ui: false
+page-layout: full
 ---
 
-**Spatial Data Science in an Age of Disruption, UC Santa Barbara, December 2023**
-
-<iframe class="slide-deck" src="UCSB_Disruptions/UCSB_disruptions.html" height="420" width="750" style="border: 1px solid #2e3846;">
-
-</iframe>
-
-**Introduction to Literature Reviews, Geospatial Systems Centre for Doctoral Training (CDT), MRES Students, May 2024**
-
-<iframe class="slide-deck" src="Lit_reviews/Lit_reviews.html" height="420" width="750" style="border: 1px solid #2e3846;">
-
-</iframe>
-
-**2024 Southern California Demographic Workshop, Southern California Association of Governments (SCAG), Los Angeles, California, September 2024**
-
-<iframe class="slide-deck" src="SCAG/SCAG_population.html" height="420" width="750" style="border: 1px solid #2e3846;">
-
-</iframe>
-
-**Sociotechnical Foundations of GeoAI and Spatial Data Science, Vienna, October 2024**
-
-<iframe class="slide-deck" src="Vienna/Vienna.html" height="420" width="750" style="border: 1px solid #2e3846;">
+A selection of recent talks and conference presentations. Click any title to view the slides.

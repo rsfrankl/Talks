@@ -1,0 +1,70 @@
+---
+title: "Urban data and the mirage of control"
+date: 2026-09-25
+author: Rachel Franklin (@rsfrankl)
+institute: "Center for Geographic Analysis | Harvard University"
+format: 
+  revealjs:
+    theme: [default, style.scss]
+    center: true
+    footer: "KU Leuven Urban Studies Institute | The Urban in 2035: Data, Methods and the Questions Ahead | Franklin | 25 September 2026"
+    embed-resources: true
+    output-file: index
+    slide-number: true
+editor: source
+---
+
+# What is the [urban]{style="color: #800020"}, <br> and what [data and methods]{style="color: #800020"} do we use to understand it in [2035]{style="color: #800020"}?
+
+## Where does [control]{style="background-color: #F0E68C"} come into it?
+
+## More data [>>]{style="color: #800020"} more understanding
+
+## Different data [>>]{style="color: #800020"} more understanding
+
+## More understanding [>>]{style="color: #800020"} better cities
+
+# [Alternative perspective]{style="color: #800020"}: <br> what does the future hold for cities and what information and understanding are we going to require?
+
+# By [2035]{style="background-color: #F0E68C"} or sometime thereafter...
+
+## [1.]{style="color: #800020"} Reality of (global) low fertility sets in and we confront what this means for ["urban"]{style="background-color: #F0E68C"}
+
+- depopulation, yes, but also...
+- fewer potential in-migrants (from anywhere)
+- new geographies and hierarchies of winners and losers (mostly losers)
+
+\
+
+What is this going to mean for both winners and losers? 
+
+## [2.]{style="color: #800020"} Reality of global climate change sets in for urban areas
+
+- habitability of cities, course
+- but also climate migration, within and across countries
+
+\
+
+What happens [*over there*]{style="background-color: #F0E68C"} matters for [*over here*]{style="background-color: #F0E68C"}.
+
+## [3.]{style="color: #800020"} Bad data chickens come home to roost
+
+- **data drift**
+  - we've been relying on dodgy data for so long we can't even validate to something ["true"]{style="background-color: #F0E68C"}
+- **conceptual drift**, too
+  - society continues to evolve but we keep measuring the same stuff as always
+- over-reliance on fancy data that lives behind paywalls
+
+\
+
+Maybe we realize the problem isn't lack of data.
+
+# A hot take I might be committed to:
+
+\
+\
+
+We have [control]{style="background-color: #F0E68C"} but the mechanism isn't via data and methods.
+
+
+# [The End.]{style="color: #800020"}

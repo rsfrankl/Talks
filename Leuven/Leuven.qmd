@@ -1,6 +1,7 @@
 ---
 title: "Urban data and the mirage of control"
 date: 2026-09-25
+description: "Symposium at KU Leuven on the Urban in 2035: Data, Methods and the Questions Ahead"
 author: Rachel Franklin (@rsfrankl)
 institute: "Center for Geographic Analysis | Harvard University"
 format: 

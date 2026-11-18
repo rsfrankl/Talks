@@ -1,0 +1,118 @@
+/*-- scss:defaults --*/
+
+$body-bg: #fbfbfb;
+$body-color: #4e5767;
+$link-color: #996b35;
+$presentation-title-slide-text-align: left;
+
+// fonts
+$font-family-sans-serif: "Courier Prime", monospace;
+$presentation-heading-font: "Courier Prime", monospace;
+$presentation-h1-font-size: 50px;
+$presentation-h2-font-size: 40px;
+
+/*-- scss:rules --*/
+
+.reveal .title-slide .date,
+.reveal .quarto-title-block .date {
+  display: none;
+}
+
+.reveal .slides .title {
+  font-size: 40px !important;
+  text-align: left !important;
+  color: #800020 !important;
+  line-height: 45px !important;
+}
+
+.subtitle {
+  font-size: 30px !important;
+  text-align: left !important;
+  color: #4e5767 !important;
+  line-height: 35px !important;
+}
+
+.quarto-title-author-name {
+  font-size: 30px;
+  text-align: left !important;
+  color: #4e5767 !important;
+  line-height: 40px !important;
+}
+
+.reveal .institute {
+  font-size: 30px;
+  text-align: left;
+  color: #4e5767 !important;
+  line-height: 40px !important;
+}
+
+.reveal .aside-footnotes {
+  font-size: 10px;
+  text-align: left;
+  color: #4e5767 !important;
+  line-height: 25px !important;
+}
+
+.reveal .slide aside {
+  font-size: 10px;
+  text-align: left;
+  color: #4e5767 !important;
+  line-height: 25px !important;
+}
+
+.date {
+  font-size: 25px;
+  text-align: left;
+  color: #4e5767 !important;
+}
+
+.reveal .footer {
+  font-size: 0.30em !important;
+  color: #4e5767;
+}
+
+.slides {
+    font-size: 30px;
+    color: #4e5767 !important;
+}
+
+.reveal .slide-number {
+    font-size: 10px !important;
+    color: #4e5767 !important;
+}
+
+.slides h1 {
+  font-size: 42px !important;
+  color: #996b35;
+}
+
+.slides h2 {
+  font-size: 35px !important;
+  color: #4e5767;
+}
+
+.slides h6 {
+    font-size: 25px !important;
+    font-weight: 100;
+    color: #4e5767 !important;
+}
+
+.caption{
+   text-align: center;
+   font-size: 15px !important;
+}
+
+.reveal ul.task-list li input[type="checkbox"] {
+  accent-color: #996b35;
+}
+
+.column figcaption,
+.column p.caption{
+   text-align: center;
+   font-size: 15px !important;
+}
+
+.reveal .quarto-figure-center figcaption {
+  text-align: center;
+  font-size: 15px !important;
+}

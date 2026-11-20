@@ -36,218 +36,7 @@ update_geom_defaults(ggrepel::GeomLabelRepel, list(family = fam))
 knitr::opts_chunk$set(dev = "ragg_png")
 ```
 
-#
-
-Population loss is already a reality for many places and on the horizon for many others. 
-I'd like to talk about that. 
-
-#
-
-```{r}
-#| label: portugal-lollipop
-#| fig-cap: "Population change by NUTS 3 region, Portugal, 2021–2025"
-#| fig-width: 8
-#| fig-height: 7
-#| dev: ragg_png
-
-library(readxl)
-library(dplyr)
-library(ggplot2)
-
-portugal_data <- read_excel("~/Documents/GitHub/Talks/Finisterra/data/Portugal_21_25.xlsx",
-                            sheet = "nuts3") |>
-  mutate(loss = change_21_25 < 0)
-
-ink <- "#4e5767"
-
-ggplot(portugal_data) +
-  geom_hline(yintercept = 0, colour = ink, linewidth = 0.3) +
-  geom_segment(aes(x = Name, xend = Name, y = 0, yend = change_21_25, colour = loss)) +
-  geom_point(aes(x = Name, y = change_21_25, size = year25, colour = loss)) +
-  scale_colour_manual(values = c(`TRUE` = "#996b35", `FALSE` = "#46859e")) +
-  coord_flip() +
-  scale_x_discrete(limits = rev) +
-  labs(x = NULL,
-       y = "Population change (percent), 2021–2025",
-       caption = "Source: Eurostat; INE population estimates (revised series).") +
-  theme_minimal(base_family = "Courier Prime") +
-  theme(text = element_text(colour = ink),
-        axis.text = element_text(colour = ink),
-        axis.line = element_line(colour = ink),
-        plot.background = element_rect(fill = "#fbfbfb", colour = NA),
-        panel.background = element_rect(fill = "#fbfbfb", colour = NA),
-        panel.grid = element_blank(),
-        legend.position = "none",
-        plot.caption = element_text(hjust = 0, size = 8))
-```
-
-#
-
-![](images/EU_pop_change.png){fig-align="center" width="80%"}
-
-#
-
-```{r}
-#| label: us-change-2010-20
-#| fig-cap: "US county population change, 2010–2020"
-#| fig-width: 10
-#| fig-height: 5.6
-
-library(readxl)
-library(dplyr)
-library(sf)
-library(tigris)
-library(ggplot2)
-options(tigris_use_cache = TRUE)
-
-pop <- read_excel("~/Documents/GitHub/Talks/Finisterra/data/US_county_pop_2010_2020.xlsx",
-                  sheet = "data", col_types = c("text", "text", "text",
-                                                "numeric", "numeric", "numeric"))
-
-counties <- counties(cb = TRUE, year = 2020, resolution = "20m", progress_bar = FALSE) |>
-  select(GEOID) |>
-  inner_join(pop, by = "GEOID") |>
-  st_transform(5070)
-stopifnot("Some counties didn't match the boundaries" = nrow(counties) == nrow(pop))
-
-states <- states(cb = TRUE, year = 2020, resolution = "20m", progress_bar = FALSE) |>
-  filter(STATEFP %in% substr(pop$GEOID, 1, 2)) |>
-  st_transform(5070)
-
-cls <- c("Growth 20% or more", "+10% to 19.9%", "0% to 9.9%",
-         "-0.1% to -9.9%", "Decline 10% or more")
-pal <- setNames(c("#46859e", "#83a6ab", "#c0d8d0", "#e0b97a", "#996b35"), cls)
-
-counties <- counties |>
-  mutate(change = cut(pct_change, breaks = c(-Inf, -10, 0, 10, 20, Inf),
-                      right = FALSE, labels = rev(cls)),
-         change = factor(change, levels = cls))
-
-n      <- table(counties$change)
-labs_n <- paste0(cls, "  (", format(as.integer(n[cls]), big.mark = ",", trim = TRUE), ")")
-
-ink <- "#4e5767"
-
-ggplot() +
-  geom_sf(data = counties, aes(fill = change), colour = NA) +
-  geom_sf(data = states, fill = NA, colour = "#fbfbfb", linewidth = 0.35) +
-  scale_fill_manual(values = pal, labels = labs_n, name = NULL, drop = FALSE) +
-  coord_sf(datum = NA) +
-  labs(caption = "Source: U.S. Census Bureau; Park, Seymour and Franklin (2026).") +
-  theme_void(base_family = "Courier Prime") +
-  theme(text = element_text(colour = ink),
-        plot.background = element_rect(fill = "#fbfbfb", colour = NA),
-        legend.position = "right",
-        legend.text     = element_text(size = 11),
-        legend.key.size = unit(1.1, "lines"),
-        plot.caption    = element_text(hjust = 0, size = 8))
-```
-
-# Why care?
-
-## Obvious societal impacts
-
-- Aging
-- Economic and fiscal challenges
-- Labor market constraints
-- Shifting population distribution
-
-## But it's also a pan-societal collective experience
-
-- How our neighborhoods and cities look
-- Shifting preferences around family formation and children
-- Impacts on politics of immigration, ethnicity, and population growth
-- Implications for household wealth (housing)
-- Experiential gaps between growing and shrinking areas
-
-# The main premise of my talk is that we talk a lot about the [demographic]{style="background-color: #F0E68C"} aspects of population loss and we should be *also* talking a lot about the [geographic]{style="background-color: #F0E68C"} aspects
-
-# The rest of this talk
-
-[1.]{style="background-color: #F0E68C"} First a quick review of some key demographic aspects
-
-\
-\
-
-
-[2.]{style="background-color: #F0E68C"} Then a deep dive into the geography of population loss
-
-# Demography (very important!)
-
-## How we often think about the causes of population loss
-
-- **Lack of opportunity** (people out-migrate, delay household formation)
-- **Cost of living** (pressures to delay or forgo childbearing)
-- Economic (and climate and political) **uncertainty**
-
-## But of course proximate sources of population loss are [demographic]{style="background-color: #F0E68C"}
-
-## Globally, there's only one way to grow or shrink
-
-\
-\
-
-Natural change: births and deaths
-
-##
-
-```{r}
-#| label: tfr-panel
-#| fig-cap: "Total fertility rate, selected countries, 1960–2024"
-#| fig-width: 10
-#| fig-height: 6.5
-#| dev: ragg_png
-
-library(readxl)
-library(dplyr)
-library(ggplot2)
-
-tfr <- read_excel("~/Documents/GitHub/Talks/Finisterra/data/WB_fertility_6countries_1960_2024.xlsx",
-                  sheet = "data") |>
-  mutate(country = factor(country, levels = c("Kenya", "India", "United States",
-                                               "Chile", "Portugal", "South Korea")))
-
-ends <- tfr |> filter(year %in% c(1960, 2024))   # endpoint labels
-
-ink <- "#4e5767"
-fam <- "Courier Prime"
-region_cols <- c("Sub-Saharan Africa"        = "#D55E00",
-                 "South Asia"                = "#E69F00",
-                 "North America"             = "#4e5767",
-                 "Latin America & Caribbean" = "#009E73",
-                 "Europe & Central Asia"     = "#0072B2",
-                 "East Asia & Pacific"       = "#56B4E9")
-
-ggplot(tfr, aes(x = year, y = tfr, colour = region)) +
-  geom_hline(yintercept = 2.1, linetype = "dotted", colour = ink, linewidth = 0.4) +
-  geom_line(linewidth = 1.2) +
-  geom_point(data = filter(ends, year == 2024), shape = 21, fill = "#fbfbfb",
-             size = 2.5, stroke = 1.2) +
-  geom_text(data = filter(ends, year == 1960), aes(label = sprintf("%.2f", tfr)),
-            hjust = 0, vjust = -0.9, family = fam, size = 3.3, fontface = "bold",
-            show.legend = FALSE) +
-  geom_text(data = filter(ends, year == 2024), aes(label = sprintf("%.2f", tfr)),
-            hjust = -0.3, family = fam, size = 3.3, fontface = "bold",
-            show.legend = FALSE) +
-  facet_wrap(~ country, nrow = 2) +
-  scale_colour_manual(values = region_cols, guide = "none") +
-  scale_x_continuous(breaks = c(1960, 1980, 2000, 2024),
-                     labels = c("'60", "'80", "'00", "'24"),
-                     expand = expansion(mult = c(0.03, 0.16))) +
-  scale_y_continuous(limits = c(0, 8.6), breaks = seq(0, 8, 2)) +
-  labs(x = NULL, y = "Births per woman",
-       caption = "Dotted line: replacement level (2.1). Source: World Bank, World Development Indicators (https://data.worldbank.org).") +
-  theme_minimal(base_family = fam) +
-  theme(text = element_text(colour = ink),
-        axis.text = element_text(colour = ink),
-        strip.text = element_text(colour = ink, face = "bold", size = 12, hjust = 0),
-        panel.grid.minor = element_blank(),
-        panel.grid.major.x = element_blank(),
-        panel.grid.major.y = element_line(colour = "grey88", linewidth = 0.3, linetype = "dotted"),
-        panel.spacing = unit(1.2, "lines"),
-        plot.background = element_rect(fill = "#fbfbfb", colour = NA),
-        plot.caption = element_text(hjust = 0, size = 8))
-```
+# Population loss is already a reality for many places and on the horizon for lots of others.
 
 ##
 
@@ -318,8 +107,130 @@ ggplot(wb, aes(x = pop_growth, y = tfr)) +
         plot.caption = element_text(hjust = 0, size = 8))
 ```
 
+# Why care?
 
-## For places---countries, regions, and cities---migration really matters
+## Known societal impacts, including
+
+- Aging and labor market pressures
+  - Who will work? Who will perform care duties?
+- Economic and fiscal challenges
+  - Who will pay taxes? Who will buy my house?
+- Shifting population distribution
+  - Will people in big cities understand my rural experience of loss?
+
+## It's also a collective experience
+
+- How neighborhoods and cities look and feel
+- Preferences around family formation and children
+- Politics of immigration, ethnicity, and population growth
+- Household wealth (housing)
+- Experiential gaps between growing and shrinking areas
+
+# The main premise of my talk is that we talk a lot about the [demographic]{style="background-color: #F0E68C"} aspects of population loss. However, population loss is fundamentally [*geographic*]{style="background-color: #F0E68C"}.
+
+# The rest of this lecture
+
+\
+\
+
+[1.]{style="background-color: #F0E68C"} A quick overview of some key demographic aspects
+
+\
+\
+
+
+[2.]{style="background-color: #F0E68C"} Then a deep dive into the [**geography**]{style="color: #46859e"} of population loss
+
+# Demography (very important!)
+
+## How we often think about the causes of population loss
+
+- **Lack of opportunity** (people out-migrate, delay household formation)
+- **Cost of living** (pressures to delay or forgo childbearing)
+- Economic (and climate and political) **uncertainty**
+
+## But of course the *proximate* sources of population loss are [demographic]{style="background-color: #F0E68C"}
+
+## Globally, there's only one way to grow or shrink
+
+## Natural change
+
+\
+\
+\
+
+Births
+\
+\
+\
+Deaths
+
+##
+
+```{r}
+#| label: tfr-panel
+#| fig-cap: "Total fertility rate, selected countries, 1960–2024"
+#| fig-width: 10
+#| fig-height: 6.5
+#| dev: ragg_png
+
+library(readxl)
+library(dplyr)
+library(ggplot2)
+
+tfr <- read_excel("~/Documents/GitHub/Talks/Finisterra/data/WB_fertility_6countries_1960_2024.xlsx",
+                  sheet = "data") |>
+  mutate(country = factor(country, levels = c("Kenya", "India", "United States",
+                                               "Chile", "Portugal", "South Korea")))
+
+ends <- tfr |> filter(year %in% c(1960, 2024))   # endpoint labels
+
+ink <- "#4e5767"
+fam <- "Courier Prime"
+region_cols <- c("Sub-Saharan Africa"        = "#D55E00",
+                 "South Asia"                = "#E69F00",
+                 "North America"             = "#4e5767",
+                 "Latin America & Caribbean" = "#009E73",
+                 "Europe & Central Asia"     = "#0072B2",
+                 "East Asia & Pacific"       = "#56B4E9")
+
+ggplot(tfr, aes(x = year, y = tfr, colour = region)) +
+  geom_hline(yintercept = 2.1, linetype = "dotted", colour = ink, linewidth = 0.4) +
+  geom_line(linewidth = 1.2) +
+  geom_point(data = filter(ends, year == 2024), shape = 21, fill = "#fbfbfb",
+             size = 2.5, stroke = 1.2) +
+  geom_text(data = filter(ends, year == 1960), aes(label = sprintf("%.2f", tfr)),
+            hjust = 0, vjust = -0.9, family = fam, size = 3.3, fontface = "bold",
+            show.legend = FALSE) +
+  geom_text(data = filter(ends, year == 2024), aes(label = sprintf("%.2f", tfr)),
+            hjust = -0.3, family = fam, size = 3.3, fontface = "bold",
+            show.legend = FALSE) +
+  facet_wrap(~ country, nrow = 2) +
+  scale_colour_manual(values = region_cols, guide = "none") +
+  scale_x_continuous(breaks = c(1960, 1980, 2000, 2024),
+                     labels = c("'60", "'80", "'00", "'24"),
+                     expand = expansion(mult = c(0.03, 0.16))) +
+  scale_y_continuous(limits = c(0, 8.6), breaks = seq(0, 8, 2)) +
+  labs(x = NULL, y = "Births per woman",
+       caption = "Dotted line: replacement level (2.1). Source: World Bank, World Development Indicators (https://data.worldbank.org).") +
+  theme_minimal(base_family = fam) +
+  theme(text = element_text(colour = ink),
+        axis.text = element_text(colour = ink),
+        strip.text = element_text(colour = ink, face = "bold", size = 12, hjust = 0),
+        panel.grid.minor = element_blank(),
+        panel.grid.major.x = element_blank(),
+        panel.grid.major.y = element_line(colour = "grey88", linewidth = 0.3, linetype = "dotted"),
+        panel.spacing = unit(1.2, "lines"),
+        plot.background = element_rect(fill = "#fbfbfb", colour = NA),
+        plot.caption = element_text(hjust = 0, size = 8))
+```
+
+
+
+## For places migration really matters
+People move in and out of areas selectively; some places see net in-migration while others experience net out-migration
+\
+\
 
 - **Internal** (within an area, like a country)
 - **International** (across international borders)
@@ -331,6 +242,8 @@ ggplot(wb, aes(x = pop_growth, y = tfr)) +
 
 ## The importance of international migration should not be underestimated
 
+##
+
 ![](images/immigration.png){fig-align="center" width="80%"}
 
 ## Another demographic factor: ageing and age structure
@@ -341,20 +254,70 @@ ggplot(wb, aes(x = pop_growth, y = tfr)) +
 
 ## And, of course, demographic composition evolves as depopulation occurs
 
-![Between 2000 and 2012–2016](images/pop_loss.png){fig-align="center" width="50%"}
+# Now let's talk about [geography]{style="color: #46859e"}
 
-::: aside
-
-Bagchi-Sen, S., Franklin, R. S., Rogerson, P., & Seymour, E. (2020). Urban inequality and the demographic transformation of shrinking cities: The role of the foreign born. Applied Geography, 116, 102168.
-
-:::
-
-# Now let's talk about geography
-
-# Really two components to the [Depopulation is a Geographical Phenomenon]{style="background-color: #F0E68C"} argument
+# **Two** components to the [*Depopulation is a Geographical Phenomenon*]{style="color: #46859e"} argument
 
 ## [1.]{style="background-color: #F0E68C"} How population loss plays out over space
-and how this matters for local areas
+and how this matters for cities, regions, and countries
+
+#
+
+```{r}
+#| label: us-change-2010-20
+#| fig-cap: "US county population change, 2010–2020"
+#| fig-width: 10
+#| fig-height: 5.6
+
+library(readxl)
+library(dplyr)
+library(sf)
+library(tigris)
+library(ggplot2)
+options(tigris_use_cache = TRUE)
+
+pop <- read_excel("~/Documents/GitHub/Talks/Finisterra/data/US_county_pop_2010_2020.xlsx",
+                  sheet = "data", col_types = c("text", "text", "text",
+                                                "numeric", "numeric", "numeric"))
+
+counties <- counties(cb = TRUE, year = 2020, resolution = "20m", progress_bar = FALSE) |>
+  select(GEOID) |>
+  inner_join(pop, by = "GEOID") |>
+  st_transform(5070)
+stopifnot("Some counties didn't match the boundaries" = nrow(counties) == nrow(pop))
+
+states <- states(cb = TRUE, year = 2020, resolution = "20m", progress_bar = FALSE) |>
+  filter(STATEFP %in% substr(pop$GEOID, 1, 2)) |>
+  st_transform(5070)
+
+cls <- c("Growth 20% or more", "+10% to 19.9%", "0% to 9.9%",
+         "-0.1% to -9.9%", "Decline 10% or more")
+pal <- setNames(c("#46859e", "#83a6ab", "#c0d8d0", "#e0b97a", "#996b35"), cls)
+
+counties <- counties |>
+  mutate(change = cut(pct_change, breaks = c(-Inf, -10, 0, 10, 20, Inf),
+                      right = FALSE, labels = rev(cls)),
+         change = factor(change, levels = cls))
+
+n      <- table(counties$change)
+labs_n <- paste0(cls, "  (", format(as.integer(n[cls]), big.mark = ",", trim = TRUE), ")")
+
+ink <- "#4e5767"
+
+ggplot() +
+  geom_sf(data = counties, aes(fill = change), colour = NA) +
+  geom_sf(data = states, fill = NA, colour = "#fbfbfb", linewidth = 0.35) +
+  scale_fill_manual(values = pal, labels = labs_n, name = NULL, drop = FALSE) +
+  coord_sf(datum = NA) +
+  labs(caption = "Source: U.S. Census Bureau; Park, Seymour and Franklin (2026).") +
+  theme_void(base_family = "Courier Prime") +
+  theme(text = element_text(colour = ink),
+        plot.background = element_rect(fill = "#fbfbfb", colour = NA),
+        legend.position = "right",
+        legend.text     = element_text(size = 11),
+        legend.key.size = unit(1.1, "lines"),
+        plot.caption    = element_text(hjust = 0, size = 8))
+```
 
 ##
 
@@ -476,9 +439,9 @@ TESTORI, G., FRANKLIN, R., SARACENO, P., PERTOLDI, M., PEREA MILLA FERNANDEZ, D.
 
 :::
 
-## [2.]{style="background-color: #F0E68C"} How does geography inform the measurement of population change and understanding of how it's experienced?
+## [2.]{style="background-color: #F0E68C"} How does geography inform the [*measurement*]{style="background-color: #F0E68C"} of population change and understanding of how it's experienced?
 
-## An incomplete list (that I'm still working on)
+## An incomplete list (in progress!)
 
 - Scale
 - Context
@@ -613,7 +576,6 @@ ggplot() +
 :::
 ::::
 
-
 ## Scale
 But even same types of units aren't always comparable 
 
@@ -664,7 +626,7 @@ ggplot() +
 ```
 
 ## Context
-It also matters what's happening *around* a particular area, whether city, region, or neighborhood
+It also matters what's happening [*around*]{style="color: #46859e"} a particular area, whether city, region, or neighborhood
 
 \
 
@@ -1080,7 +1042,7 @@ Where does this leave us?
 - Aging
 - Below-replacement level fertility
 - Housing challenges that don't evaporate with decline
-- Transport demand might not either
+- Transport demand that might not, either
 - Regional and global interdependence
 - Uncertainty
 
@@ -1093,11 +1055,13 @@ And both demographic and geographic considerations are important
 - The role of immigration policy
 
 
-## Geographic
+## Geographic (place-based policy)
 
+- It helps to know: How extensive is loss? Where is it happening and how scale-dependent is it? Where in the area is it occurring and are all sub-areas equally affected?
+
+## Geographic (place-based policy)
 - Helping individuals reach desired residential location (staying, going...)
 - Balancing challenges of growth and loss within the same national context
-- How extensive is loss? Where is it happening and how scale-dependent is it? Where in the area is it occurring and are all sub-areas equally affected?
 
 # The End.
 
